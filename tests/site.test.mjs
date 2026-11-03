@@ -4,6 +4,9 @@ import {readFile,stat} from 'node:fs/promises';
 import path from 'node:path';
 import worker from '../src/worker.mjs';
 import {enquiryUrl} from '../public/enquiry.js';
+import {projects,profileTeam,profileMetrics,profileEntities} from '../src/profile.mjs';
+import {services} from '../src/data.mjs';
+import {esc} from '../src/components.mjs';
 const routes=JSON.parse(await readFile('src/routes.json','utf8'));
 const readRoute=r=>readFile(path.join('dist',r==='/'?'index.html':r.slice(1)+'/index.html'),'utf8');
 test('all 19 rendered routes have unique metadata, valid structured data and working internal targets',async()=>{
@@ -11,7 +14,9 @@ test('all 19 rendered routes have unique metadata, valid structured data and wor
  for(const route of routes){const html=await readRoute(route);const title=html.match(/<title>(.*?)<\/title>/)[1];assert(!titles.has(title));titles.add(title);
   assert.equal((html.match(/<h1[ >]/g)||[]).length,1,route);
   assert(html.includes(`href="__SITE_ORIGIN__${route}"`),route);
-  assert(!/Brunei|1600 1875|1008 1875|60116001875|601110081875/i.test(html),route);
+  assert(!/1600 1875|1008 1875|60116001875|601110081875/i.test(html),route);
+  // Overseas locations are permitted only in the attributed historical portfolio.
+  if(route!=='/portfolio')assert(!/Brunei/i.test(html),route);
   const graph=JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1])['@graph'];
   assert.equal(graph.find(i=>i['@type']==='Organization').telephone,'+60 11-6128 3216');
   if(route.startsWith('/services/'))assert(graph.some(i=>i['@type']==='Service'));
@@ -20,6 +25,27 @@ test('all 19 rendered routes have unique metadata, valid structured data and wor
    assert((await stat(path.join('dist',url.slice(1)))).isFile(),`${route}: ${url}`);
   }
  }
+});
+test('all 21 original references retain identities, sectors, scope and expandable detail',async()=>{
+ const expected=['volsar-group','applus-velosi','transwater-api','honda-factory','esi-sampling','ms-time','kyochoon','doc-work-permits','doc-expat-mm2h','doc-indo-philippine','doc-international-students','doc-sector-quotas','doc-family-legal','csr-kbs','csr-sl1m','csr-bea-outreach','csr-brunei-expo','csr-bea-csr','csr-eccp-mindanao','csr-mullion-japan','csr-brunei-japan'];
+ assert.deepEqual(projects.map(p=>p.id),expected);
+ const html=await readRoute('/portfolio');
+ assert.equal((html.match(/class="panel project-card filter-item"/g)||[]).length,21);
+ assert.equal((html.match(/class="project-details"/g)||[]).length,21);
+ assert.deepEqual(['Recruitment & permits','Documentation','Training & CSR'].map(c=>projects.filter(p=>p.category===c).length),[7,6,8]);
+ for(const p of projects)for(const field of ['title','entity','sector','location','summary','details'])assert(html.includes(esc(p[field])),`${p.id}: ${field}`);
+ assert(html.includes('not independently completed TIGA projects'));
+ assert(html.includes('do not describe our current service area'));
+ const graph=JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1]);
+ assert(!JSON.stringify(graph).includes('Brunei'),'Historical locations must not enter service coverage schema');
+});
+test('profile background and full service descriptions survive the migration',async()=>{
+ const html=await readRoute('/about');
+ assert.equal(profileTeam.length,3);assert.equal(profileMetrics.length,5);assert.equal(profileEntities.length,4);
+ for(const p of profileTeam)for(const k of ['name','role','focus'])assert(html.includes(esc(p[k])));
+ for(const p of profileMetrics)for(const k of ['metric','label','description'])assert(html.includes(esc(p[k])));
+ for(const e of profileEntities)assert(html.includes(esc(e)));
+ for(const s of services){const page=await readRoute('/services/'+s.slug);assert(s.description.length>100);assert(page.includes(esc(s.description)));}
 });
 test('clean URL redirects preserve query parameters',async()=>{
  for(const [from,to]of [['/about.html','/about'],['/about/','/about'],['/about/index.html','/about'],['/index.html','/']]){

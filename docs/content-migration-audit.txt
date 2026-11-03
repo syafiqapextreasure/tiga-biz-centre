@@ -1,0 +1,96 @@
+CONTENT MIGRATION AUDIT — 2026-11-03
+
+Sources checked
+Original: https://cosmos-biz-centre.mail-82f.workers.dev/#/portfolio
+Public bundle: /assets/index-OGSqHacw.js
+TIGA before correction: https://tiga-biz-centre.mail-82f.workers.dev/portfolio
+The live TIGA HTML contained 6 project cards; the original public data contained 21.
+
+Cause
+The initial rebuild copied the six selected portfolio examples from the approved artwork. It did not reconcile that selection against the full source content. This was a migration omission, not a filter or loading error.
+
+RESTORED
+Portfolio: all 21 source IDs, names, client/programme, sector, location, scope and longer descriptions. 7 recruitment, 6 documentation and 8 training/CSR records. All are server-rendered; no pagination hides entries. Search covers complete card text, including collapsed details. Source attribution and current Malaysia-only service coverage remain explicit. Four Brunei-related records are historical group references, not an offer to serve Brunei.
+About: 3 named historical team profiles with roles and experience; 5 reported experience/client figures; 4 group entities and available registration numbers. These are explicitly original-profile background, not claims about current TIGA staff, ownership or audited client totals. Vision/mission wording restored in substance.
+Services: fuller descriptions on all 12 detail pages; omitted sector examples, foreign-business setup, MM2H prerequisites, binding, tender presentations, certified translation and admin translation restored. Six historical group capabilities and four document-preparation groups added as expandable sections.
+FAQs: all 5 original FAQ topics already had equivalents in the 8 TIGA FAQs. Restored practical document examples with the existing secure-sharing guidance.
+Process: original three-step sequence retained; renewal and ongoing-administration support made explicit.
+Contact: working WhatsApp enquiry flow and email already retained. User's replacement phone 01161283216 remains on phone and WhatsApp links.
+Home: current 12-service directory, service approach and FAQs retained; historical detail is available on About and Portfolio rather than repeated as homepage statistics.
+
+INTENTIONAL DIFFERENCES / REMAINING FEATURE DIFFERENCES
+Old Cosmos phone numbers, walk-in wording and legacy brand removed per user instructions. No new office/address or current overseas coverage inferred.
+Original photographs replaced by the approved emerald/ivory/gold illustrations and original generated icon assets. No new stock photographs or invented client logos.
+The original EN/BM language toggle is not implemented in the current English TIGA site. This correction restores factual content in English; it does not claim bilingual feature parity.
+The source profile itself was not independently audited. Historical claims and spelling remain as reported on the supplied website.
+
+PORTFOLIO RECONCILIATION
+01. Volsar Group Sdn Bhd
+    Recruitment & permits | Kebabangan Offshore
+    Original ID: volsar-group — restored with full scope and details
+02. Applus Velosi Energy Division
+    Recruitment & permits | Kebabangan Offshore
+    Original ID: applus-velosi — restored with full scope and details
+03. Transwater API Sdn Bhd
+    Recruitment & permits | SAMUR Plant, Sipitang, Sabah
+    Original ID: transwater-api — restored with full scope and details
+04. Honda Factory
+    Recruitment & permits | Alor Gajah, Melaka
+    Original ID: honda-factory — restored with full scope and details
+05. Esi Sampling Sdn Bhd
+    Recruitment & permits | Sumandak Offshore Platform
+    Original ID: esi-sampling — restored with full scope and details
+06. MS Time Sdn Bhd
+    Recruitment & permits | Sabah Offshore Platform
+    Original ID: ms-time — restored with full scope and details
+07. Kyochoon Sdn Bhd
+    Recruitment & permits | Kuala Lumpur
+    Original ID: kyochoon — restored with full scope and details
+08. Local & International Work Permits
+    Documentation | Nationwide & Regional
+    Original ID: doc-work-permits — restored with full scope and details
+09. Expatriate, Professional & MM2H Passes
+    Documentation | Malaysia
+    Original ID: doc-expat-mm2h — restored with full scope and details
+10. Indonesian & Filipino Documentation Services
+    Documentation | Sabah & Peninsular Malaysia
+    Original ID: doc-indo-philippine — restored with full scope and details
+11. International Student Documentation
+    Documentation | Regional Higher Institutions
+    Original ID: doc-international-students — restored with full scope and details
+12. Sector Quota Documentation Services
+    Documentation | East & West Malaysia
+    Original ID: doc-sector-quotas — restored with full scope and details
+13. Foreign Marriage & Divorce Documentation Coordination
+    Documentation | Regional & International
+    Original ID: doc-family-legal — restored with full scope and details
+14. Ministry of Sports & Youth Outreach
+    Training & CSR | National Level Campaign
+    Original ID: csr-kbs — restored with full scope and details
+15. Skim Latihan 1 Malaysia Tour Program
+    Training & CSR | Tour Program 2017–2018
+    Original ID: csr-sl1m — restored with full scope and details
+16. Brunei Energy Association Outreach Program
+    Training & CSR | Brunei Darussalam
+    Original ID: csr-bea-outreach — restored with full scope and details
+17. Brunei International Trade & Commerce Exhibition
+    Training & CSR | Brunei Darussalam
+    Original ID: csr-brunei-expo — restored with full scope and details
+18. Brunei Energy Association CSR Program
+    Training & CSR | Brunei Darussalam
+    Original ID: csr-bea-csr — restored with full scope and details
+19. European Chamber of the Philippines (Mindanao) BDU
+    Training & CSR | Mindanao, Philippines
+    Original ID: csr-eccp-mindanao — restored with full scope and details
+20. Mullion Japan CSR — Sabah Wetland Program
+    Training & CSR | Sabah, Malaysia
+    Original ID: csr-mullion-japan — restored with full scope and details
+21. Brunei–Japan Association CSR Program
+    Training & CSR | Regional Program
+    Original ID: csr-brunei-japan — restored with full scope and details
+
+VALIDATION
+Build: 19 clean-URL pages.
+Eight automated tests pass, including exact 21 source IDs and rendered full content, profile metadata, all service descriptions, old-phone removal, coverage schema, routes and enquiry behavior.
+Browser: portfolio filters return 7/6/8; All returns 21; Honda search returns 1; unknown search displays empty state; project disclosure opens correctly.
+Responsive DOM/layout checks and selected screenshots are saved in the accompanying content-review folder. No new image assets are required.
