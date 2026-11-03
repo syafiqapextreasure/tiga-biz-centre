@@ -34,3 +34,25 @@
 .featured-service{background:#e9eee580;border-left:3px solid var(--gold);padding-inline:.65em;border-radius:5px}
 .project-card,.project-heading>div{min-width:0}.project-heading>div{overflow-wrap:anywhere}.project-heading>.icon{flex-shrink:0;object-fit:contain}
 @media(max-width:900px){.worker-highlight{gap:14px;padding:18px 16px}.worker-highlight>.icon{width:40px;height:40px}.worker-highlight h3{font-size:23px}.worker-highlight p{font-size:18px}.worker-highlight .text-link{font-size:16px}}
+
+/* Service pages: content-sized sections instead of a stretched side panel. */
+.page-service-detail .detail-hero{display:grid;grid-template-columns:minmax(0,1fr) 28%;align-items:center;gap:4%;padding:.6em 0 1em;border-bottom:1px solid var(--rule)}
+.detail-heading{min-width:0}.detail-heading h1{max-width:22ch;font-size:clamp(36px,4.3vw,96px);margin-bottom:.35em}.detail-summary{max-width:58ch;line-height:1.5}.detail-heading .button{margin-top:1em}
+.detail-art{padding:1em .2em}.detail-art .asset{width:100%;max-height:20vw;object-fit:contain;transition:transform .35s}.detail-art:hover .asset{transform:translateY(-4px)}
+.page-service-detail .main>section{margin-top:1.25em}.detail-content{margin-bottom:0}.detail-content .section-title{margin-bottom:.65em}
+.detail-content .scope-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.6em;margin:0;font-size:1em}
+.scope-grid li{min-width:0;gap:.65em;padding:.8em .9em;background:linear-gradient(135deg,#fffefa,#edf1e8);border:1px solid #d9dfd3;border-radius:9px;align-items:center;line-height:1.4}
+.scope-grid .tick{margin-top:0;align-self:flex-start}.scope-grid li>span:last-child{min-width:0}
+.detail-preparation{display:flex;align-items:flex-start;gap:1em;padding:1em 1.2em;border-left:3px solid var(--gold)}.detail-preparation>.icon{width:2.8em;height:3.2em}.detail-preparation>div{min-width:0}.detail-preparation h2{font-size:1.5em}.detail-preparation p{margin-top:.35em;line-height:1.5}.detail-preparation .text-link{padding-bottom:0}
+.detail-support{padding:1em 0;border-block:1px solid var(--rule)}.detail-support h2{font-size:1.35em}.detail-support p,.detail-support .service-area{font-size:.95em;line-height:1.5;margin-top:.45em}
+/* Remove forced empty areas observed in the site-wide spacing audit. */
+.contact-grid,.process-answers{align-items:start}.project-description{min-height:0}
+@media(min-width:901px){.compact-services{grid-template-rows:repeat(6,auto)}.timeline>li{min-height:0;padding-block:1em 1.2em}.contact-channel{padding-block:1.15em}}
+@media(min-width:1100px){.detail-content .scope-compact{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:640px) and (max-width:1099px){.scope-compact li:last-child{grid-column:1/-1}}
+@media(max-width:900px){.page-service-detail .detail-hero{grid-template-columns:minmax(0,1fr) 23%;gap:5%;padding:0 0 24px}.detail-heading h1{font-size:clamp(32px,5.1vw,44px)}.detail-art{padding:0}.detail-art .asset{max-height:none}.detail-summary{font-size:18px}.detail-content .scope-grid{font-size:18px;gap:12px}.detail-preparation{padding:20px;gap:16px}.detail-preparation>.icon{width:36px;height:42px}.detail-preparation h2{font-size:25px}.detail-preparation p,.detail-support p,.detail-support .service-area{font-size:18px}.detail-support h2{font-size:25px}.large-text .scope-grid{font-size:20px}.page-service-detail .main>section{margin-top:24px}}
+@media(max-width:639px){.page-service-detail .detail-hero{grid-template-columns:minmax(0,1fr) 62px;gap:14px}.detail-heading{display:contents}.detail-heading .eyebrow,.detail-heading .breadcrumb,.detail-heading .category,.detail-heading .detail-summary,.detail-heading .button{grid-column:1/-1}.detail-heading h1{grid-column:1;margin:0;font-size:32px}.detail-art{grid-column:2;grid-row:4}.detail-heading .category{margin:0}.detail-heading .detail-summary{margin:0}.detail-heading .button{justify-self:start;margin-top:0}.detail-content .scope-grid{grid-template-columns:1fr}.detail-preparation{gap:12px;padding:18px 16px}.detail-preparation>.icon{width:29px;height:36px}.detail-preparation h2{font-size:24px}}
+@media(prefers-reduced-motion:reduce){.detail-art:hover .asset{transform:none}}
+
+.detail-heading .eyebrow{margin-bottom:.5em}.detail-heading .breadcrumb{margin-bottom:.6em}
+@media(max-width:639px){.detail-heading .eyebrow,.detail-heading .breadcrumb{margin:0}.detail-heading h1{font-size:clamp(28px,8.2vw,32px)}}
