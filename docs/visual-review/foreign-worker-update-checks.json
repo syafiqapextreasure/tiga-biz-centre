@@ -1,0 +1,218 @@
+[
+  {
+    "page": "portfolio",
+    "width": 390,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": true,
+    "overflow": false
+  },
+  {
+    "page": "services",
+    "width": 390,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": true,
+    "overflow": false
+  },
+  {
+    "page": "home",
+    "width": 390,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": true,
+    "overflow": false
+  },
+  {
+    "page": "portfolio",
+    "width": 768,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": true,
+    "overflow": false
+  },
+  {
+    "page": "services",
+    "width": 768,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": true,
+    "overflow": false
+  },
+  {
+    "page": "home",
+    "width": 768,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": true,
+    "overflow": false
+  },
+  {
+    "page": "portfolio",
+    "width": 1440,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": true,
+    "overflow": false
+  },
+  {
+    "page": "services",
+    "width": 1440,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": true,
+    "overflow": false
+  },
+  {
+    "page": "home",
+    "width": 1440,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": true,
+    "overflow": false
+  },
+  {
+    "page": "portfolio",
+    "width": 2560,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": true,
+    "overflow": false
+  },
+  {
+    "page": "services",
+    "width": 2560,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": true,
+    "overflow": false
+  },
+  {
+    "page": "home",
+    "width": 2560,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": true,
+    "overflow": false
+  },
+  {
+    "page": "portfolio",
+    "width": 390,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": false,
+    "overflow": false
+  },
+  {
+    "page": "services",
+    "width": 390,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": false,
+    "overflow": false
+  },
+  {
+    "page": "home",
+    "width": 390,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": false,
+    "overflow": false
+  },
+  {
+    "page": "portfolio",
+    "width": 768,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": false,
+    "overflow": false
+  },
+  {
+    "page": "services",
+    "width": 768,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": false,
+    "overflow": false
+  },
+  {
+    "page": "home",
+    "width": 768,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": false,
+    "overflow": false
+  },
+  {
+    "page": "portfolio",
+    "width": 1024,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": false,
+    "overflow": false
+  },
+  {
+    "page": "services",
+    "width": 1024,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": false,
+    "overflow": false
+  },
+  {
+    "page": "home",
+    "width": 1024,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": false,
+    "overflow": false
+  },
+  {
+    "page": "portfolio",
+    "width": 1440,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": false,
+    "overflow": false
+  },
+  {
+    "page": "services",
+    "width": 1440,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": false,
+    "overflow": false
+  },
+  {
+    "page": "home",
+    "width": 1440,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": false,
+    "overflow": false
+  },
+  {
+    "page": "portfolio",
+    "width": 2560,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": false,
+    "overflow": false
+  },
+  {
+    "page": "services",
+    "width": 2560,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": false,
+    "overflow": false
+  },
+  {
+    "page": "home",
+    "width": 2560,
+    "brokenImages": 0,
+    "cardOverflow": 0,
+    "largeText": false,
+    "overflow": false
+  }
+]

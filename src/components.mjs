@@ -1,6 +1,6 @@
 import {nav,business} from './data.mjs';
 export const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-export const image=(name,cls='',alt='',eager=false)=>`<img class="asset ${cls}" src="/assets/${name}.webp" alt="${esc(alt)}" ${eager?'fetchpriority="high"':'loading="eager"'} decoding="async" width="300" height="260">`;
+export const image=(name,cls='',alt='',eager=false)=>`<img class="asset ${cls}" src="/assets/${name}.webp${['people','leaf'].includes(name)?'?v=2':''}" alt="${esc(alt)}" ${eager?'fetchpriority="high"':'loading="eager"'} decoding="async" width="300" height="260">`;
 export const icon=(name,cls='')=>image(name,`icon ${cls}`);
 export const arrow='<span class="arrow" aria-hidden="true">→</span>';
 export const wa=(service='')=>`https://wa.me/${business.phoneRaw}?text=${encodeURIComponent(`Hello TIGA Biz Centre, I would like to enquire about ${service||'your business and documentation services'}. Please guide me on the next steps.`)}`;

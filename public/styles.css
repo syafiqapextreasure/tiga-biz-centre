@@ -27,3 +27,10 @@
 /* Keep the approved two-line About title, while retaining readable body copy. */
 @media(min-width:901px){.page-about .hero h1{font-size:clamp(44px,5.2vw,120px)}.page-about .hero h1>span{font-size:.87em;white-space:nowrap}.page-about .hero-description{font-size:1.12em}.hero .eyebrow{font-size:max(12px,.68em)}.sidebar nav a{font-size:1.1em}.large-text .hero h1{font-size:clamp(44px,5.2vw,120px)}}
 @media(min-width:901px) and (max-width:1100px){.compact-services a,.service-item p{font-size:1em}.filter{font-size:.9em}}
+
+/* Foreign worker assistance is highlighted without changing the service order. */
+.worker-highlight{display:flex;align-items:flex-start;gap:1em;margin-top:1.2em;padding:1em 1.2em;background:var(--sage);border-left:3px solid var(--gold);border-radius:8px;color:var(--deep)}
+.worker-highlight>.icon{width:3.2em;height:3.2em;margin-top:.2em}.worker-highlight>div{min-width:0}.worker-highlight h3{font-size:1.25em}.worker-highlight p{margin-top:.4em;font-size:1em;line-height:1.55}.worker-highlight .text-link{font-size:.9em;padding-bottom:0}
+.featured-service{background:#e9eee580;border-left:3px solid var(--gold);padding-inline:.65em;border-radius:5px}
+.project-card,.project-heading>div{min-width:0}.project-heading>div{overflow-wrap:anywhere}.project-heading>.icon{flex-shrink:0;object-fit:contain}
+@media(max-width:900px){.worker-highlight{gap:14px;padding:18px 16px}.worker-highlight>.icon{width:40px;height:40px}.worker-highlight h3{font-size:23px}.worker-highlight p{font-size:18px}.worker-highlight .text-link{font-size:16px}}

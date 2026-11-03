@@ -27,11 +27,11 @@ const specs=[
  ['review','process',[280,598,94,96],'light'],
  ['check','process',[281,791,86,92],'light'],
  ['hardhat','portfolio',[207,535,82,69],'light'],
- ['people','portfolio',[625,537,67,62],'light'],
+ ['people','portfolio',[614,535,80,64],'light'],
  ['file','portfolio',[210,734,61,63],'light'],
  ['education','portfolio',[622,735,71,67],'light'],
  ['presentation','portfolio',[210,930,66,62],'light'],
- ['leaf','portfolio',[629,928,66,65],'light'],
+ ['leaf','portfolio',[617,930,78,65],'light'],
  ['whatsapp','contact',[195,460,63,65],'light'],
  ['phone','contact',[196,590,67,65],'light'],
  ['email','contact',[195,715,65,50],'light'],
@@ -58,7 +58,9 @@ for(const [name,source,box,mode] of specs){
   const isBackground=mode==='light'?(r>150&&g>150&&b>140&&Math.max(r,g,b)-Math.min(r,g,b)<36):(g>r*1.20&&g>b*1.06&&r<70&&g<142&&b<132);
   if(isBackground)data[p+3]=0;
  }
- const png=await sharp(data,{raw:info}).trim({threshold:1}).png().toBuffer();
+ const trimmed=sharp(data,{raw:info}).trim({threshold:1});
+ const padded=['people','leaf'].includes(name)?trimmed.extend({top:4,bottom:4,left:4,right:4,background:{r:0,g:0,b:0,alpha:0}}):trimmed;
+ const png=await padded.png().toBuffer();
  const webp=await sharp(png).webp({lossless:true,effort:6}).toBuffer();
  await writeFile(path.join(out,name+'.webp'),webp);
  const meta=await sharp(webp).metadata();

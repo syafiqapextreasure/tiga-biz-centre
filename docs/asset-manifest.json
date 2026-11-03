@@ -333,14 +333,14 @@
     "name": "people",
     "source": "09-portfolio.png",
     "crop": [
-      625,
-      537,
-      67,
-      62
+      614,
+      535,
+      80,
+      64
     ],
-    "width": 60,
-    "height": 42,
-    "bytes": 2204,
+    "width": 74,
+    "height": 50,
+    "bytes": 2358,
     "compression": "lossless WebP",
     "background": "Removed source background; original coloured strokes retained"
   },
@@ -393,14 +393,14 @@
     "name": "leaf",
     "source": "09-portfolio.png",
     "crop": [
-      629,
-      928,
-      66,
+      617,
+      930,
+      78,
       65
     ],
-    "width": 57,
-    "height": 48,
-    "bytes": 1704,
+    "width": 69,
+    "height": 56,
+    "bytes": 1916,
     "compression": "lossless WebP",
     "background": "Removed source background; original coloured strokes retained"
   },

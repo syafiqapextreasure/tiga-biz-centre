@@ -30,3 +30,8 @@ Build completes. Worker and static-asset settings checked against Cloudflare doc
 SEO/AEO/GEO
 Rendered HTML, descriptive titles, canonical/OG URLs, Organization/WebSite/WebPage/Breadcrumb/Service data, sitemap and crawlable answer content included. Coverage is Malaysia, especially Sabah and Sarawak; no physical location is fabricated. Research and primary sources are in seo-competitor-research.txt. Rankings, AI citations and rich-result inclusion are not guaranteed.
 
+FOLLOW-UP: FOREIGN WORKER SERVICES AND CLIPPED PORTFOLIO ICONS
+2026-11-03
+Expanded service 03 to cover parcel delivery (pengiriman parcel), medical check-up coordination, bank assistance, insurance assistance and Labour Department liaison, alongside existing permit and quota paperwork. Added a compact sage/gold homepage highlight and a subtle emphasis on the services directory entry. The existing service URL is retained.
+Corrected the people and leaf asset crops from the approved original artwork, retaining full left edges and adding four transparent pixels of padding on each side. Portfolio heading content can shrink and wrap inside its card.
+Checked Home, Services and Portfolio at 390, 768, 1024, 1440 and 2560 px with standard text, plus 390, 768, 1440 and 2560 px with A+ text: 27 page/size combinations, no horizontal page/card overflow and no missing images. Visually inspected corrected card and homepage screenshots. Expanded service detail page and its WhatsApp link were also inspected. Existing six automated test groups passed.
