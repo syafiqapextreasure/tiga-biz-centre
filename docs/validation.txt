@@ -25,7 +25,8 @@ Browser: category filter 4 services, empty search 0, reset 12; FAQ category 2, F
 No real WhatsApp message was sent. Message construction is covered by automated tests; the UI was checked through form validity without completing an external send.
 
 DEPLOYMENT STATUS
-Build completes. Worker and static-asset settings checked against Cloudflare documentation. Local Wrangler dry-run is blocked by the Windows sandbox's esbuild spawn EPERM restriction; GitHub CI includes the same dry-run in Linux. No Cloudflare deployment is claimed.
+Build completes. Worker and static-asset settings checked against Cloudflare documentation. Local Wrangler dry-run is blocked by the Windows sandbox's esbuild spawn EPERM restriction. GitHub CI passed npm ci, the build, all six test groups and Wrangler deployment dry-run on Linux. Successful run: https://github.com/syafiqapextreasure/tiga-biz-centre/actions/runs/41582220545 (source commit 3912d6e). No Cloudflare deployment is claimed.
 
 SEO/AEO/GEO
 Rendered HTML, descriptive titles, canonical/OG URLs, Organization/WebSite/WebPage/Breadcrumb/Service data, sitemap and crawlable answer content included. Coverage is Malaysia, especially Sabah and Sarawak; no physical location is fabricated. Research and primary sources are in seo-competitor-research.txt. Rankings, AI citations and rich-result inclusion are not guaranteed.
+

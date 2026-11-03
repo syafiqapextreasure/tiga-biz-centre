@@ -56,4 +56,5 @@ See `docs/validation.txt`, `docs/design-audit.txt`, `docs/visual-review/`, and `
 
 The build and six automated test groups pass locally. Browser checks cover filters, FAQ expansion, mobile navigation, text-size controls and form validation. Screenshots cover all seven approved pages at 390, 768, 1024, 1440 and 2560 px; no horizontal overflow or missing images was detected. Exact pixel identity is not claimed.
 
-The local Windows sandbox prevents Wrangler's esbuild child process from starting (`spawn EPERM`), so local Wrangler dry-run validation is incomplete. The included GitHub Actions workflow performs build, tests and Wrangler dry-run in Linux without deploying. No Cloudflare account deployment has been performed.
+GitHub Actions passed dependency installation, build, all six test groups and the Wrangler deployment dry-run on Linux: [successful check](https://github.com/syafiqapextreasure/tiga-biz-centre/actions/runs/41582220545). The local Windows sandbox blocks esbuild child processes, so the Linux check supplies the deployment validation. No Cloudflare account deployment has been performed.
+
