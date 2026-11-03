@@ -1,0 +1,352 @@
+[
+  {
+    "page": "home",
+    "device": "reference",
+    "bodyFont": "18px",
+    "brokenImages": [],
+    "headingFont": "50.176px",
+    "height": 1763,
+    "overflow": false,
+    "width": 1024
+  },
+  {
+    "page": "about",
+    "device": "reference",
+    "bodyFont": "18px",
+    "brokenImages": [],
+    "headingFont": "53.248px",
+    "height": 1824,
+    "overflow": false,
+    "width": 1024
+  },
+  {
+    "page": "services",
+    "device": "reference",
+    "bodyFont": "18px",
+    "brokenImages": [],
+    "headingFont": "50.176px",
+    "height": 1680,
+    "overflow": false,
+    "width": 1024
+  },
+  {
+    "page": "process",
+    "device": "reference",
+    "bodyFont": "18px",
+    "brokenImages": [],
+    "headingFont": "50.176px",
+    "height": 1582,
+    "overflow": false,
+    "width": 1024
+  },
+  {
+    "page": "portfolio",
+    "device": "reference",
+    "bodyFont": "18px",
+    "brokenImages": [],
+    "headingFont": "50.176px",
+    "height": 1687,
+    "overflow": false,
+    "width": 1024
+  },
+  {
+    "page": "faqs",
+    "device": "reference",
+    "bodyFont": "18px",
+    "brokenImages": [],
+    "headingFont": "50.176px",
+    "height": 1768,
+    "overflow": false,
+    "width": 1024
+  },
+  {
+    "page": "contact",
+    "device": "reference",
+    "bodyFont": "18px",
+    "brokenImages": [],
+    "headingFont": "50.176px",
+    "height": 1788,
+    "overflow": false,
+    "width": 1024
+  },
+  {
+    "page": "home",
+    "device": "desktop",
+    "bodyFont": "25.2px",
+    "brokenImages": [],
+    "headingFont": "70.56px",
+    "height": 2254,
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "page": "about",
+    "device": "desktop",
+    "bodyFont": "25.2px",
+    "brokenImages": [],
+    "headingFont": "74.88px",
+    "height": 2514,
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "page": "services",
+    "device": "desktop",
+    "bodyFont": "25.2px",
+    "brokenImages": [],
+    "headingFont": "70.56px",
+    "height": 2419,
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "page": "process",
+    "device": "desktop",
+    "bodyFont": "25.2px",
+    "brokenImages": [],
+    "headingFont": "70.56px",
+    "height": 2289,
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "page": "portfolio",
+    "device": "desktop",
+    "bodyFont": "25.2px",
+    "brokenImages": [],
+    "headingFont": "70.56px",
+    "height": 2443,
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "page": "faqs",
+    "device": "desktop",
+    "bodyFont": "25.2px",
+    "brokenImages": [],
+    "headingFont": "70.56px",
+    "height": 2381,
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "page": "contact",
+    "device": "desktop",
+    "bodyFont": "25.2px",
+    "brokenImages": [],
+    "headingFont": "70.56px",
+    "height": 2530,
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "page": "home",
+    "device": "wide",
+    "bodyFont": "42px",
+    "brokenImages": [],
+    "headingFont": "114px",
+    "height": 3642,
+    "overflow": false,
+    "width": 2560
+  },
+  {
+    "page": "about",
+    "device": "wide",
+    "bodyFont": "42px",
+    "brokenImages": [],
+    "headingFont": "120px",
+    "height": 4042,
+    "overflow": false,
+    "width": 2560
+  },
+  {
+    "page": "services",
+    "device": "wide",
+    "bodyFont": "42px",
+    "brokenImages": [],
+    "headingFont": "114px",
+    "height": 3910,
+    "overflow": false,
+    "width": 2560
+  },
+  {
+    "page": "process",
+    "device": "wide",
+    "bodyFont": "42px",
+    "brokenImages": [],
+    "headingFont": "114px",
+    "height": 3766,
+    "overflow": false,
+    "width": 2560
+  },
+  {
+    "page": "portfolio",
+    "device": "wide",
+    "bodyFont": "42px",
+    "brokenImages": [],
+    "headingFont": "114px",
+    "height": 3961,
+    "overflow": false,
+    "width": 2560
+  },
+  {
+    "page": "faqs",
+    "device": "wide",
+    "bodyFont": "42px",
+    "brokenImages": [],
+    "headingFont": "114px",
+    "height": 3942,
+    "overflow": false,
+    "width": 2560
+  },
+  {
+    "page": "contact",
+    "device": "wide",
+    "bodyFont": "42px",
+    "brokenImages": [],
+    "headingFont": "114px",
+    "height": 4112,
+    "overflow": false,
+    "width": 2560
+  },
+  {
+    "page": "home",
+    "device": "tablet",
+    "bodyFont": "18px",
+    "brokenImages": [],
+    "headingFont": "43.008px",
+    "height": 1907,
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "page": "about",
+    "device": "tablet",
+    "bodyFont": "18px",
+    "brokenImages": [],
+    "headingFont": "43.008px",
+    "height": 2148,
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "page": "services",
+    "device": "tablet",
+    "bodyFont": "18px",
+    "brokenImages": [],
+    "headingFont": "43.008px",
+    "height": 2381,
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "page": "process",
+    "device": "tablet",
+    "bodyFont": "18px",
+    "brokenImages": [],
+    "headingFont": "43.008px",
+    "height": 1836,
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "page": "portfolio",
+    "device": "tablet",
+    "bodyFont": "18px",
+    "brokenImages": [],
+    "headingFont": "43.008px",
+    "height": 2074,
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "page": "faqs",
+    "device": "tablet",
+    "bodyFont": "18px",
+    "brokenImages": [],
+    "headingFont": "43.008px",
+    "height": 2147,
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "page": "contact",
+    "device": "tablet",
+    "bodyFont": "18px",
+    "brokenImages": [],
+    "headingFont": "43.008px",
+    "height": 2319,
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "page": "home",
+    "device": "phone",
+    "bodyFont": "18px",
+    "brokenImages": [],
+    "headingFont": "32px",
+    "height": 2762,
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "page": "about",
+    "device": "phone",
+    "bodyFont": "18px",
+    "brokenImages": [],
+    "headingFont": "32px",
+    "height": 2905,
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "page": "services",
+    "device": "phone",
+    "bodyFont": "18px",
+    "brokenImages": [],
+    "headingFont": "32px",
+    "height": 3138,
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "page": "process",
+    "device": "phone",
+    "bodyFont": "18px",
+    "brokenImages": [],
+    "headingFont": "32px",
+    "height": 2377,
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "page": "portfolio",
+    "device": "phone",
+    "bodyFont": "18px",
+    "brokenImages": [],
+    "headingFont": "32px",
+    "height": 3149,
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "page": "faqs",
+    "device": "phone",
+    "bodyFont": "18px",
+    "brokenImages": [],
+    "headingFont": "32px",
+    "height": 2794,
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "page": "contact",
+    "device": "phone",
+    "bodyFont": "18px",
+    "brokenImages": [],
+    "headingFont": "32px",
+    "height": 2796,
+    "overflow": false,
+    "width": 390
+  }
+]

@@ -57,4 +57,3 @@ See `docs/validation.txt`, `docs/design-audit.txt`, `docs/visual-review/`, and `
 The build and six automated test groups pass locally. Browser checks cover filters, FAQ expansion, mobile navigation, text-size controls and form validation. Screenshots cover all seven approved pages at 390, 768, 1024, 1440 and 2560 px; no horizontal overflow or missing images was detected. Exact pixel identity is not claimed.
 
 The local Windows sandbox prevents Wrangler's esbuild child process from starting (`spawn EPERM`), so local Wrangler dry-run validation is incomplete. The included GitHub Actions workflow performs build, tests and Wrangler dry-run in Linux without deploying. No Cloudflare account deployment has been performed.
-

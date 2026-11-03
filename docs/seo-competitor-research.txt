@@ -1,0 +1,190 @@
+TIGA BIZ CENTRE — SEO, ANSWER ENGINE AND COMPETITOR RESEARCH
+Research date: 3 November 2026
+
+POSITIONING
+Recommended core phrase: business and documentation support in Malaysia.
+Supporting promise: Business setup, official paperwork, manpower documentation and everyday administration coordinated through one point of contact.
+This recommendation is based on the supplied service range and observed competitor vocabulary, not paid search-volume data. No keyword volumes, ranking positions or guaranteed results have been asserted. Search intent and service fit determine the priorities below.
+
+User-confirmed operating model: fully online, serving clients throughout Malaysia with particular emphasis on Sabah and Sarawak. Describe the offer as online coordination serving these audiences, not as physical offices in those locations. No street address or confirmed city was supplied. Do not claim a Kota Kinabalu or other local office from the source email or historical projects. Do not describe TIGA as a licensed recruitment agency, lawyer, company secretary, immigration authority, insurer or bank unless the corresponding credentials are verified. Service availability depends on the request and applicable Malaysian jurisdiction.
+
+RELEVANT COMPETITORS / SEARCH COMPETITORS
+These are relevant overlapping service providers, not assertions that every provider offers TIGA's entire 12-service range.
+
+1. 3E Accounting Malaysia — company setup and corporate services
+Observed overlap: company incorporation, bank-account opening support and employment-pass-related services.
+Useful content pattern: a dedicated service page with clear process and relevant preparation information.
+Differentiation opportunity for TIGA: make the breadth of practical document/admin support easy to understand, rather than implying the same accounting or secretarial credentials.
+Source: https://www.3ecpa.com.my/services/company-setup/malaysia-company-incorporation-services/
+
+2. Paul Hype Page Malaysia — incorporation and market expansion
+Observed overlap: company formation, licensing, bank accounts and employment passes for businesses.
+Useful content pattern: organise related services around the customer's startup and growth journey; provide internal links to topic-specific guides.
+Differentiation opportunity: a simpler enquiry path for smaller administrative needs as well as business setup.
+Source: https://www.paulhypepage.my/
+
+3. Agensi Pekerjaan LVA — foreign workforce services
+Observed overlap: immigration document preparation, worker-permit renewal, insurance arrangements and workforce management.
+Useful content pattern: group the offer into procedure preparation, renewals and ongoing support.
+Differentiation opportunity: TIGA can connect workforce paperwork with general business administration while clearly defining its coordination role.
+Source: https://lva.com.my/services/
+
+4. TSM — manpower and permit-renewal services
+Observed overlap: foreign-worker permit renewal, recruitment and expatriate-related support.
+Useful content pattern: answer a concrete customer task on a focused service page.
+Caution: do not copy detailed regulatory checklists from a competitor page; verify requirements against the issuing authority.
+Source: https://www.mytsm.com.my/our-services/permit-renewal/
+
+5. Expatriate.com.my / AA Alive Sdn. Bhd. — employment-pass consultancy
+Observed overlap: employer-side employment-pass guidance and documentation.
+Useful content pattern: a narrow topic focus with a visible distinction between private consultancy and official approval authorities.
+Differentiation opportunity: TIGA has a broader support range, so use specific service descriptions to avoid an unfocused catch-all message.
+Source: https://employment-pass.com/
+
+KEYWORD PRIORITIES
+Priority 1 — broad commercial intent
+- online business documentation support Malaysia
+- online document preparation assistance Sabah
+- business administration support Sarawak
+- online administrative coordination Malaysia
+- business documentation services Malaysia
+- business registration assistance Malaysia
+- business setup support Malaysia
+- document preparation services Malaysia
+- business administration services Malaysia
+
+Priority 2 — high-intent service clusters
+- foreign worker documentation support Malaysia
+- work permit renewal documentation Malaysia
+- employment pass documentation support Malaysia
+- visa and pass application document assistance Malaysia
+- MM2H documentation support Malaysia
+- government forms assistance Malaysia
+- business licence documentation support Malaysia
+- company profile writing Malaysia
+- business proposal preparation Malaysia
+- recruitment onboarding documentation Malaysia
+- tenancy documentation support Malaysia
+
+Priority 3 — practical support
+- printing photocopy scanning services
+- document scanning and collation
+- business correspondence drafting
+- outsourced administrative support
+- corporate travel booking assistance
+- bank account opening document preparation
+
+Use precise wording matching services actually delivered. Broad terms such as “visa agent”, “legal services”, “company secretary” and “recruitment agency” can create the wrong expectation if qualifications and scope are not verified. Do not add “near me” as repetitive page copy. Do not scatter every keyword across every page. Sabah/Sarawak variants can describe online assistance and audience coverage. Avoid assuming that every registration or permit procedure is identical across Malaysian jurisdictions; verify the relevant authority requirements before publishing detailed guidance.
+
+Malay-language opportunity for a later human-reviewed translation:
+- bantuan pendaftaran perniagaan
+- bantuan penyediaan dokumen
+- sokongan pentadbiran perniagaan
+- dokumentasi pekerja asing
+- bantuan dokumen permit kerja
+Provide proper translated pages with language alternatives if implemented; do not use hidden Malay keyword blocks.
+
+PAGE METADATA RECOMMENDATIONS
+Keep the approved visible hero headlines and composition. Search title tags can supply explicit service/location meaning without distorting the visual design.
+
+Route /
+Title: TIGA Biz Centre | Business & Documentation Support Malaysia
+Description: Online business and documentation support across Malaysia, with a focus on Sabah and Sarawak. Explore TIGA Biz Centre's 12 coordinated services.
+Primary topic: business and documentation support.
+
+Route /about
+Title: About TIGA Biz Centre | Business & Document Coordination
+Description: Discover TIGA Biz Centre's approach to clear guidance, organised documents and responsible coordination for individuals and businesses.
+Primary topic: business/document coordination, entity identity.
+
+Route /services
+Title: Business & Documentation Services Malaysia | TIGA Biz Centre
+Description: Explore business registration, foreign-worker documentation, visa and pass support, company profiles and everyday administration with TIGA Biz Centre.
+Primary topic: service directory.
+
+Route /our-process
+Title: How It Works | TIGA Biz Centre Documentation Support
+Description: Enquire, review and coordinate, then follow up. See how TIGA Biz Centre helps you organise documents and understand your next steps.
+Primary topic: how the coordination process works.
+
+Route /portfolio
+Title: Historical Project References | TIGA Biz Centre
+Description: Explore selected historical documentation, manpower and programme references attributed to the Kosmos Group profile.
+Primary topic: attributed historical references, not independent TIGA achievements.
+
+Route /faqs
+Title: Business & Documentation FAQs | TIGA Biz Centre
+Description: Find answers about document preparation, service enquiries, coordination and official approvals before contacting TIGA Biz Centre.
+Primary topic: questions and preparation.
+
+Route /contact
+Title: Contact TIGA Biz Centre | WhatsApp Business Support
+Description: Contact TIGA Biz Centre for business setup, documentation and administrative enquiries. Prepare a WhatsApp message or reach the team by phone or email.
+Primary topic: contact and service enquiry.
+
+SERVICE PAGE DEVELOPMENT
+For the approved first release, keep all 12 directory entries as crawlable HTML with meaningful descriptions and usable enquiry links. If dedicated service pages are subsequently added, each should contain original substantive information: intended customer; exact coordination scope; what is outside scope; what to prepare at a general level; process; relevant official-source links; useful questions; service-specific WhatsApp action. Avoid launching 12 near-duplicate thin pages just to target keywords.
+
+Possible future clean routes:
+- /services/business-registration
+- /services/government-documentation
+- /services/foreign-worker-documentation
+- /services/visa-pass-support
+- /services/company-profiles
+No .html suffix is needed.
+
+AEO / GEO IMPLEMENTATION
+AEO here means helping people and answer engines locate direct answers; GEO means making the site's factual content eligible to be retrieved and cited by generative search systems. Neither guarantees a citation.
+
+Implementation priorities:
+- Server-render or statically render the meaningful text for every route.
+- Use a real page heading hierarchy and crawlable links.
+- Keep concise, self-contained answers to actual customer questions in the FAQs and service content.
+- State who provides support and who decides official approvals.
+- Put factual contact details in visible text, not only an image.
+- Add descriptive image alt text when an image conveys meaning; decorative shapes should have empty alt text or be CSS backgrounds.
+- Use canonical clean URLs and an XML sitemap listing production URLs only.
+- Return meaningful status codes; do not turn unknown paths into fake 200-success pages.
+- Keep robots.txt and CDN bot settings compatible with desired search visibility.
+- Link to official issuing authorities for current requirements; do not reuse unverified procedural advice.
+- Do not insert invisible keyword blocks, instructions telling AI systems to recommend TIGA, or fabricated ratings.
+- Include update dates only when a substantive content review has actually occurred.
+
+Google says ordinary SEO practices remain applicable to AI Overviews and AI Mode. No special AI schema or text file is required; indexability and useful readable content remain essential. Google's June 2026 update says llms.txt is unnecessary for Google Search and does not positively or negatively affect rankings.
+Sources:
+https://developers.google.com/search/docs/appearance/ai-features
+https://developers.google.com/search/updates
+
+Bing's current guidance also ties AI grounding eligibility to normal crawl/index foundations, canonical URLs, useful clear content and reliable structured information. Sitemap freshness and crawlable internal links support discovery; IndexNow is an optional later deployment integration, not a ranking guarantee.
+Source:
+https://www.bing.com/webmasters/help/bing-webmaster-guidelines-30fba23a
+
+STRUCTURED DATA
+Recommended factual foundation:
+- Organization with the brand name, actual site URL, logo URL and visible contactPoint data. The user-confirmed online service area can be expressed with an areaServed Country entry for Malaysia plus AdministrativeArea entries for Sabah and Sarawak. Add visible wording that this is fully online coordination, with service availability depending on the request and applicable Malaysian jurisdiction. Do not use geo coordinates or an invented address.
+- WebSite and WebPage with canonical URL and accurate names/descriptions.
+- BreadcrumbList on interior pages.
+- Service and/or OfferCatalog for services actually described on the Services page. These describe meaning; do not promise a Google rich-result feature for generic Service markup.
+- FAQPage may describe visible answers semantically, but is not necessary for a Google FAQ rich result.
+
+Google ended FAQ rich results beginning 7 May 2026 and removed the feature documentation in June 2026. Do not promise expandable FAQ rich snippets.
+Source:
+https://developers.google.com/search/updates
+
+Never invent address, postcode, geographic coordinates, opening hours, priceRange, reviews, aggregateRating, founding date, qualifications or sameAs social profiles. Do not transfer Kosmos Group's historical metrics or clients into TIGA's Organization claims. Use Organization instead of pretending to know a physical LocalBusiness location. Markup must match what visitors can read.
+Sources:
+https://developers.google.com/search/docs/appearance/structured-data/organization
+https://developers.google.com/search/docs/appearance/structured-data/sd-policies
+
+OFFICIAL CONTENT SOURCES FOR FUTURE GUIDES
+Malaysia Immigration — Foreign Worker:
+https://www.imi.gov.my/index.php/en/main-services/foreign-worker/
+Malaysia Immigration ESD — Company Registration FAQ:
+https://esd.imi.gov.my/portal/faq/esd-company-registration/
+SSM — comparison of business entities:
+https://www.ssm.com.my/Pages/Register_Business_Company_LLP/Business/Business-Document/Comparisons-of-business-entities-in-Msia.pdf
+These are reference destinations, not endorsements of TIGA. Check relevant official requirements at the time a detailed guide is written or updated.
+
+POST-LAUNCH MEASUREMENT
+After the final domain is known, verify ownership in Google Search Console and Bing Webmaster Tools, submit the sitemap, inspect indexed pages, and measure real enquiries rather than only traffic. Record which service each enquiry concerns and the relevant Malaysian state or territory. Use actual search-query and conversion data to refine priorities. Any future regional landing pages need distinct useful content and truthful online coverage; do not manufacture local offices or duplicate city doorway pages. Search rankings, traffic and AI citations cannot be guaranteed.
+

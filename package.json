@@ -1,0 +1,24 @@
+{
+  "name": "tiga-biz-centre",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/dev.mjs",
+    "test": "node --test --test-isolation=none tests/*.test.mjs",
+    "deploy": "npm run build && wrangler deploy",
+    "preview:worker": "npm run build && wrangler dev"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource-variable/plus-jakarta-sans": "^5.3.0"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.5",
+    "wrangler": "^4.156.2"
+  }
+}

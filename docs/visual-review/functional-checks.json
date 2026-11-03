@@ -1,0 +1,61 @@
+[
+  {
+    "check": "Service category",
+    "result": "4 results shown"
+  },
+  {
+    "check": "Empty search",
+    "visible": true,
+    "status": "0 results shown"
+  },
+  {
+    "check": "Reset services",
+    "result": "12 results shown"
+  },
+  {
+    "check": "FAQ category",
+    "result": "2 questions shown"
+  },
+  {
+    "check": "FAQ expands",
+    "open": ""
+  },
+  {
+    "check": "FAQ search",
+    "result": "1 questions shown"
+  },
+  {
+    "check": "Portfolio category",
+    "result": "2 results shown"
+  },
+  {
+    "check": "Required form fields",
+    "result": {
+      "nameMissing": true,
+      "url": "/contact"
+    }
+  },
+  {
+    "check": "Invalid phone",
+    "mismatch": true
+  },
+  {
+    "check": "Valid form",
+    "valid": true
+  },
+  {
+    "check": "Mobile menu opens",
+    "expanded": "true"
+  },
+  {
+    "check": "Escape closes menu",
+    "expanded": "false"
+  },
+  {
+    "check": "Larger reading text",
+    "result": {
+      "font": "20px",
+      "overflow": false
+    }
+  }
+]

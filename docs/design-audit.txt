@@ -1,0 +1,20 @@
+APPROVED DESIGN AUDIT — BEFORE IMPLEMENTATION
+
+Seven reference images: 03-emerald-service-hub.png and 06-about.png through 11-contact.png.
+Each reference is 1024 x 1536 pixels. The artwork is raster, without font or vector source.
+
+Shared frame: left sidebar ~166 px (16.2%); content starts ~194–210 px; right margin ~26 px. Emerald textured full-height sidebar, ivory body, gold rules and details. Original three-page logo and all hero illustrations must be reused. Typography: geometric sans headings, readable sans body. Plus Jakarta Sans and Inter are visual matches, not verified source fonts.
+
+HOME: large left headline/right documents; service selector; two-column 12-service list; green 3-step panel; preparation checklist/FAQ columns; bottom conversation CTA; ruled footer.
+ABOUT: intro hero; editorial introduction; 12/3/1 band; three values; vision/mission cards; four audience rows; green CTA.
+SERVICES: hero; search; category filters; two columns of six descriptions; guidance band; green preparation band.
+PROCESS: hero; vertical timeline with 01/02/03 and original large icons; three pale-sage response boxes; green preparation band; two answers; enquiry CTA.
+PORTFOLIO: hero; attribution panel; category filters; six historical reference cards; sector chips; green CTA. Retain source attribution.
+FAQS: hero; search; four category controls; eight accordion questions, first three open; preparation band; privacy note; green CTA.
+CONTACT: hero; contact details/form columns; source phone/email; green 3-step band; privacy note; secondary links.
+
+Required adaptations: fully online service throughout Malaysia, especially Sabah/Sarawak; no office address. Readable responsive body size, larger typography on wide screens; mobile navigation replaces desktop rail. Reduced-motion support, keyboard focus, functional filters/forms. Retain core desktop composition. No unrequested photography.
+
+Verification order: render and screenshot each page; compare with its reference; correct observable visual mismatches; repeat at 1440 desktop, 2560 wide desktop, 768 tablet, 390 phone; then functional validation.
+
+Accuracy limits: responsive reflow and accessible font sizing prevent a literal 100% pixel match across devices. Reuse and measure the original artwork; document genuine differences instead of claiming an unmeasured percentage.

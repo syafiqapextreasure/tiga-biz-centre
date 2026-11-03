@@ -1,0 +1,31 @@
+TIGA BIZ CENTRE — IMPLEMENTATION REVIEW
+2026-11-03
+
+VISUAL REVIEW BEFORE FUNCTIONAL TESTING
+All seven approved pages were compared at the original 1024 px width, then captured at 1440 and 2560 desktop, 768 tablet and 390 phone widths (35 final captures).
+No horizontal overflow or missing image was detected at these widths.
+
+Shared corrections: original logo, textured emerald sidebar, ivory background, gold divider rules, original illustrations/icons, clean page URLs, larger small labels, scalable body text, responsive navigation. The About title now preserves the approved two-line desktop hierarchy. The preview viewport is reset after testing so it does not remain scaled down from a large desktop simulation.
+
+Home: original three-document hero and gold check, three intent cards, two-column service list, three-step panel, preparation/FAQ cards and final CTA retained. Directory rows grow to accommodate readable type and touch targets. About and Portfolio links are added to reach all approved pages.
+About: connected-document hero, editorial split introduction, 12/3/1 band, original value icons, vision/mission, four audience rows and CTA retained. Body text and online coverage create additional height. CTA wraps at narrow desktop widths.
+Services: original briefcase/document hero and search/category structure retained. Fixed the clipped left gold hero edge. Two-column directory becomes one column on smaller screens. Descriptions enlarged.
+Process: original timeline illustrations, numbered steps, response cards, preparation band and answers retained. Restored original process icons on phones; cards stack for reading.
+Portfolio: original folder/documents hero, six card icons, attribution panel, categories and sector chips retained. Fixed hardhat crop. Historical attribution is explicit; entries are not presented as new TIGA client work.
+FAQs: original question hero, service/category icons, first three open accordions, basics band, lock illustration and CTA retained. Fixed the chat and lock crops. Updated answer text expands some rows.
+Contact: original conversation hero, two-column enquiry area, WhatsApp/phone/email icons, original three-step illustrations and shield retained. Both telephone destinations now use 01161283216. Added online-service coverage. On phones, email wraps at @ rather than splitting its final character.
+
+DELIBERATE / REMAINING DIFFERENCES
+Responsive typography and factual copy updates make some pages taller than the raster references. Fonts are visual matches, not proven original typefaces. Backgrounds are reused texture crops; their tiling differs from a single fixed-size raster mockup. Raster edge quality is limited by supplied sources. The A+ reading control and mobile menu are functional additions. No unsupported claim of 100% pixel similarity is made.
+
+FUNCTIONAL RESULTS
+Six automated test groups pass: all 19 rendered pages/internal targets/metadata/schema; clean URL redirects; Worker origin handling, HEAD, 404 and 405; sitemap/noindex; WhatsApp target and message encoding; modern-browser phone input pattern.
+Live HTTP: 19 pages plus sitemap/robots returned 200; missing route returned 404.
+Browser: category filter 4 services, empty search 0, reset 12; FAQ category 2, FAQ search 1, accordion expands; portfolio Documentation filter 2; required fields and invalid telephone blocked; valid example accepted by constraints; mobile menu opens and Escape closes; A+ increases paragraph text to 20 px without overflow. No browser console errors during final checks.
+No real WhatsApp message was sent. Message construction is covered by automated tests; the UI was checked through form validity without completing an external send.
+
+DEPLOYMENT STATUS
+Build completes. Worker and static-asset settings checked against Cloudflare documentation. Local Wrangler dry-run is blocked by the Windows sandbox's esbuild spawn EPERM restriction; GitHub CI includes the same dry-run in Linux. No Cloudflare deployment is claimed.
+
+SEO/AEO/GEO
+Rendered HTML, descriptive titles, canonical/OG URLs, Organization/WebSite/WebPage/Breadcrumb/Service data, sitemap and crawlable answer content included. Coverage is Malaysia, especially Sabah and Sarawak; no physical location is fabricated. Research and primary sources are in seo-competitor-research.txt. Rankings, AI citations and rich-result inclusion are not guaranteed.

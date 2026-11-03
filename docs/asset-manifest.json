@@ -1,0 +1,653 @@
+[
+  {
+    "name": "logo",
+    "source": "03-emerald-service-hub.png",
+    "crop": [
+      25,
+      43,
+      118,
+      174
+    ],
+    "width": 104,
+    "height": 161,
+    "bytes": 10052,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "hero-home",
+    "source": "03-emerald-service-hub.png",
+    "crop": [
+      707,
+      63,
+      295,
+      265
+    ],
+    "width": 277,
+    "height": 248,
+    "bytes": 15860,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "hero-about",
+    "source": "06-about.png",
+    "crop": [
+      723,
+      62,
+      280,
+      231
+    ],
+    "width": 269,
+    "height": 212,
+    "bytes": 14164,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "hero-services",
+    "source": "07-services.png",
+    "crop": [
+      746,
+      64,
+      254,
+      266
+    ],
+    "width": 218,
+    "height": 248,
+    "bytes": 14316,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "hero-process",
+    "source": "08-our-process.png",
+    "crop": [
+      707,
+      63,
+      295,
+      265
+    ],
+    "width": 277,
+    "height": 249,
+    "bytes": 16554,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "hero-portfolio",
+    "source": "09-portfolio.png",
+    "crop": [
+      706,
+      76,
+      294,
+      215
+    ],
+    "width": 277,
+    "height": 202,
+    "bytes": 11774,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "hero-faqs",
+    "source": "10-faqs.png",
+    "crop": [
+      742,
+      63,
+      251,
+      230
+    ],
+    "width": 244,
+    "height": 218,
+    "bytes": 16018,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "hero-contact",
+    "source": "11-contact.png",
+    "crop": [
+      685,
+      89,
+      304,
+      241
+    ],
+    "width": 287,
+    "height": 223,
+    "bytes": 15352,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "briefcase",
+    "source": "03-emerald-service-hub.png",
+    "crop": [
+      237,
+      431,
+      57,
+      56
+    ],
+    "width": 49,
+    "height": 45,
+    "bytes": 1356,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "document",
+    "source": "03-emerald-service-hub.png",
+    "crop": [
+      500,
+      432,
+      50,
+      57
+    ],
+    "width": 44,
+    "height": 49,
+    "bytes": 1436,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "gear",
+    "source": "03-emerald-service-hub.png",
+    "crop": [
+      750,
+      430,
+      59,
+      61
+    ],
+    "width": 51,
+    "height": 49,
+    "bytes": 2072,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "chat-light",
+    "source": "03-emerald-service-hub.png",
+    "crop": [
+      277,
+      970,
+      64,
+      60
+    ],
+    "width": 54,
+    "height": 50,
+    "bytes": 1574,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "review-light",
+    "source": "03-emerald-service-hub.png",
+    "crop": [
+      552,
+      968,
+      68,
+      62
+    ],
+    "width": 57,
+    "height": 51,
+    "bytes": 2136,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "check-light",
+    "source": "03-emerald-service-hub.png",
+    "crop": [
+      841,
+      969,
+      59,
+      62
+    ],
+    "width": 49,
+    "height": 49,
+    "bytes": 1820,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "chat-gold",
+    "source": "03-emerald-service-hub.png",
+    "crop": [
+      57,
+      1425,
+      52,
+      49
+    ],
+    "width": 41,
+    "height": 46,
+    "bytes": 1504,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "checklist",
+    "source": "06-about.png",
+    "crop": [
+      209,
+      679,
+      60,
+      70
+    ],
+    "width": 54,
+    "height": 63,
+    "bytes": 2720,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "clock",
+    "source": "06-about.png",
+    "crop": [
+      483,
+      678,
+      75,
+      72
+    ],
+    "width": 62,
+    "height": 61,
+    "bytes": 2336,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "pages",
+    "source": "06-about.png",
+    "crop": [
+      752,
+      679,
+      83,
+      73
+    ],
+    "width": 59,
+    "height": 60,
+    "bytes": 2200,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "chat",
+    "source": "08-our-process.png",
+    "crop": [
+      277,
+      377,
+      92,
+      91
+    ],
+    "width": 80,
+    "height": 74,
+    "bytes": 3282,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "review",
+    "source": "08-our-process.png",
+    "crop": [
+      280,
+      598,
+      94,
+      96
+    ],
+    "width": 87,
+    "height": 82,
+    "bytes": 4458,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "check",
+    "source": "08-our-process.png",
+    "crop": [
+      281,
+      791,
+      86,
+      92
+    ],
+    "width": 76,
+    "height": 76,
+    "bytes": 3748,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "hardhat",
+    "source": "09-portfolio.png",
+    "crop": [
+      207,
+      535,
+      82,
+      69
+    ],
+    "width": 61,
+    "height": 49,
+    "bytes": 2236,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "people",
+    "source": "09-portfolio.png",
+    "crop": [
+      625,
+      537,
+      67,
+      62
+    ],
+    "width": 60,
+    "height": 42,
+    "bytes": 2204,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "file",
+    "source": "09-portfolio.png",
+    "crop": [
+      210,
+      734,
+      61,
+      63
+    ],
+    "width": 47,
+    "height": 52,
+    "bytes": 1570,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "education",
+    "source": "09-portfolio.png",
+    "crop": [
+      622,
+      735,
+      71,
+      67
+    ],
+    "width": 66,
+    "height": 45,
+    "bytes": 1984,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "presentation",
+    "source": "09-portfolio.png",
+    "crop": [
+      210,
+      930,
+      66,
+      62
+    ],
+    "width": 55,
+    "height": 50,
+    "bytes": 1748,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "leaf",
+    "source": "09-portfolio.png",
+    "crop": [
+      629,
+      928,
+      66,
+      65
+    ],
+    "width": 57,
+    "height": 48,
+    "bytes": 1704,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "whatsapp",
+    "source": "11-contact.png",
+    "crop": [
+      195,
+      460,
+      63,
+      65
+    ],
+    "width": 51,
+    "height": 51,
+    "bytes": 2178,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "phone",
+    "source": "11-contact.png",
+    "crop": [
+      196,
+      590,
+      67,
+      65
+    ],
+    "width": 50,
+    "height": 48,
+    "bytes": 1608,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "email",
+    "source": "11-contact.png",
+    "crop": [
+      195,
+      715,
+      65,
+      50
+    ],
+    "width": 54,
+    "height": 40,
+    "bytes": 1924,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "shield",
+    "source": "11-contact.png",
+    "crop": [
+      213,
+      1264,
+      69,
+      76
+    ],
+    "width": 58,
+    "height": 68,
+    "bytes": 2630,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "lock",
+    "source": "10-faqs.png",
+    "crop": [
+      221,
+      1159,
+      74,
+      87
+    ],
+    "width": 57,
+    "height": 72,
+    "bytes": 2958,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "faq-chat",
+    "source": "10-faqs.png",
+    "crop": [
+      837,
+      367,
+      52,
+      44
+    ],
+    "width": 44,
+    "height": 38,
+    "bytes": 1324,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "signpost",
+    "source": "07-services.png",
+    "crop": [
+      207,
+      1171,
+      79,
+      68
+    ],
+    "width": 76,
+    "height": 68,
+    "bytes": 2518,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "building-gold",
+    "source": "06-about.png",
+    "crop": [
+      212,
+      1154,
+      45,
+      45
+    ],
+    "width": 36,
+    "height": 32,
+    "bytes": 1460,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "people-gold",
+    "source": "06-about.png",
+    "crop": [
+      209,
+      1211,
+      53,
+      43
+    ],
+    "width": 48,
+    "height": 25,
+    "bytes": 1274,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "id-gold",
+    "source": "06-about.png",
+    "crop": [
+      209,
+      1269,
+      57,
+      42
+    ],
+    "width": 41,
+    "height": 31,
+    "bytes": 1406,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "checklist-light",
+    "source": "07-services.png",
+    "crop": [
+      213,
+      1308,
+      59,
+      75
+    ],
+    "width": 59,
+    "height": 75,
+    "bytes": 2432,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "contact-chat",
+    "source": "11-contact.png",
+    "crop": [
+      287,
+      1106,
+      65,
+      64
+    ],
+    "width": 53,
+    "height": 46,
+    "bytes": 1468,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "contact-review",
+    "source": "11-contact.png",
+    "crop": [
+      552,
+      1105,
+      69,
+      68
+    ],
+    "width": 57,
+    "height": 50,
+    "bytes": 1842,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "contact-check",
+    "source": "11-contact.png",
+    "crop": [
+      829,
+      1103,
+      77,
+      70
+    ],
+    "width": 66,
+    "height": 59,
+    "bytes": 2314,
+    "compression": "lossless WebP",
+    "background": "Removed source background; original coloured strokes retained"
+  },
+  {
+    "name": "emerald-texture",
+    "source": "03-emerald-service-hub.png",
+    "crop": [
+      0,
+      0,
+      16,
+      1536
+    ],
+    "bytes": 11850,
+    "compression": "lossless WebP; no pixel loss"
+  },
+  {
+    "name": "panel-texture",
+    "source": "03-emerald-service-hub.png",
+    "crop": [
+      200,
+      1064,
+      790,
+      10
+    ],
+    "bytes": 3734,
+    "compression": "lossless WebP; no pixel loss"
+  },
+  {
+    "name": "ivory-texture",
+    "source": "03-emerald-service-hub.png",
+    "crop": [
+      180,
+      0,
+      500,
+      25
+    ],
+    "bytes": 6578,
+    "compression": "lossless WebP; no pixel loss"
+  }
+]
