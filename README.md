@@ -50,6 +50,10 @@ Plus Jakarta Sans and Inter are self-hosted visual matches; the source artwork d
 
 `public/assets` contains deployment-ready assets and font licences. `scripts/extract-assets.mjs` is an optional authoring script using the original numbered PNG references in the parent folder. It is not needed to build or deploy. `scripts/visual-report.mjs` likewise uses the separately delivered references and browser screenshots.
 
+## Service-page layout
+
+All twelve service pages use a compact checklist grid and a content-sized preparation panel. Original illustrations balance the header. The preparation link selects the service on the contact form. Spacing has also been tightened on Home, Contact, Our Process and Portfolio. The follow-up audit covers all nineteen routes and 81 viewport/text-size combinations; see `docs/visual-review/spacing-checks.json`.
+
 ## Verification
 
 See `docs/validation.txt`, `docs/design-audit.txt`, `docs/visual-review/`, and `docs/seo-competitor-research.txt`.
