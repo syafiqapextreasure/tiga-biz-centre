@@ -58,7 +58,13 @@ All twelve service pages use a compact checklist grid and a content-sized prepar
 
 See `docs/validation.txt`, `docs/design-audit.txt`, `docs/visual-review/`, and `docs/seo-competitor-research.txt`.
 
-The build and six automated test groups pass locally. Browser checks cover filters, FAQ expansion, mobile navigation, text-size controls and form validation. Screenshots cover all seven approved pages at 390, 768, 1024, 1440 and 2560 px; no horizontal overflow or missing images was detected. Exact pixel identity is not claimed.
+The build and eight automated test groups pass locally. Browser checks cover filters, FAQ expansion, mobile navigation, text-size controls and form validation. Screenshots cover all seven approved pages at 390, 768, 1024, 1440 and 2560 px; no horizontal overflow or missing images was detected. Exact pixel identity is not claimed.
 
 GitHub Actions passed dependency installation, build, all six test groups and the Wrangler deployment dry-run on Linux: [successful check](https://github.com/syafiqapextreasure/tiga-biz-centre/actions/runs/41582220545). The local Windows sandbox blocks esbuild child processes, so the Linux check supplies the deployment validation. No Cloudflare account deployment has been performed.
 
+
+## Content migration audit
+
+The portfolio now preserves all 21 original Cosmos references (7 recruitment, 6 documentation, 8 training/CSR), including full project details and searchable sector/location fields. About restores the original profile’s three people, five reported metrics and four group entities with historical attribution. All twelve service pages include fuller descriptions; Services restores six historical capability areas and four preparation groups. Current TIGA contact details and Malaysia-only coverage remain unchanged. Historical overseas references do not expand current service coverage.
+
+See [the source reconciliation](docs/content-migration-audit.txt) and [37 responsive checks](docs/content-responsive-checks.json). The original EN/BM toggle has not been ported; the restored content is in English.
