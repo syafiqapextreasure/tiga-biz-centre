@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "dev": "node scripts/dev.mjs",
-    "test": "node --test --test-isolation=none tests/*.test.mjs",
+    "test": "node --test tests/*.test.mjs",
     "deploy": "npm run build && wrangler deploy",
     "preview:worker": "npm run build && wrangler dev"
   },
@@ -22,3 +22,4 @@
     "wrangler": "^4.156.2"
   }
 }
+
