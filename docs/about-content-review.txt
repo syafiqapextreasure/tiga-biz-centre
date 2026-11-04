@@ -1,0 +1,23 @@
+ABOUT PAGE CONTENT REVIEW — 4 NOVEMBER 2026
+
+Original source: https://cosmos-biz-centre.mail-82f.workers.dev/#/about
+The original public bundle remains index-OGSqHacw.js, the same source audited on 3 November.
+
+Cause
+The previous restoration placed three team profiles, five reported figures and four entities inside collapsed disclosures after the contact call to action. The content existed in local and live HTML but was hidden until expanded. Four explicit objectives and the fuller introductory background were still absent.
+
+Corrected
+- Restored all four objectives: simplify administration; improve document readiness; save clients time; connect with appropriate providers.
+- Expanded the company introduction, adapted to TIGA's online operation.
+- Retained vision and mission.
+- Added visible background and the four named entities.
+- Displayed all three complete historical team profiles as normal cards, including initials, roles, experience and source labels.
+- Displayed all five reported metrics and descriptions as normal cards.
+- Restored the source's distinction between separate historical figures and an independently audited or combined total.
+- Moved the full background above the final call to action.
+- Added section links for objectives, background, team and experience.
+
+Validation
+Build and all eight existing test groups pass. Ten responsive checks at 320, 390, 768, 1440 and 2560 px in both normal and A+ text modes found no horizontal overflow, clipped cards or missing images. All three people, five metrics and four objectives are rendered without collapsed sections. Quick links were exercised in the browser. Desktop and phone screenshots are in this folder.
+
+Current phone/WhatsApp and Malaysia-only online service coverage are retained. Historical profile information is attributed to Kosmos Group, as on the original website. The English/Bahasa Melayu switch remains a separate, unimplemented feature.

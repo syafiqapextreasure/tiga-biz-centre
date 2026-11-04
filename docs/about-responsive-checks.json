@@ -1,0 +1,112 @@
+[
+  {
+    "broken": 0,
+    "clipped": 0,
+    "closedSections": 0,
+    "largeText": true,
+    "metrics": 5,
+    "objectives": 4,
+    "overflow": false,
+    "people": 3,
+    "width": 320
+  },
+  {
+    "broken": 0,
+    "clipped": 0,
+    "closedSections": 0,
+    "largeText": true,
+    "metrics": 5,
+    "objectives": 4,
+    "overflow": false,
+    "people": 3,
+    "width": 390
+  },
+  {
+    "broken": 0,
+    "clipped": 0,
+    "closedSections": 0,
+    "largeText": true,
+    "metrics": 5,
+    "objectives": 4,
+    "overflow": false,
+    "people": 3,
+    "width": 768
+  },
+  {
+    "broken": 0,
+    "clipped": 0,
+    "closedSections": 0,
+    "largeText": true,
+    "metrics": 5,
+    "objectives": 4,
+    "overflow": false,
+    "people": 3,
+    "width": 1440
+  },
+  {
+    "broken": 0,
+    "clipped": 0,
+    "closedSections": 0,
+    "largeText": true,
+    "metrics": 5,
+    "objectives": 4,
+    "overflow": false,
+    "people": 3,
+    "width": 2560
+  },
+  {
+    "broken": 0,
+    "clipped": 0,
+    "closedSections": 0,
+    "largeText": false,
+    "metrics": 5,
+    "objectives": 4,
+    "overflow": false,
+    "people": 3,
+    "width": 320
+  },
+  {
+    "broken": 0,
+    "clipped": 0,
+    "closedSections": 0,
+    "largeText": false,
+    "metrics": 5,
+    "objectives": 4,
+    "overflow": false,
+    "people": 3,
+    "width": 390
+  },
+  {
+    "broken": 0,
+    "clipped": 0,
+    "closedSections": 0,
+    "largeText": false,
+    "metrics": 5,
+    "objectives": 4,
+    "overflow": false,
+    "people": 3,
+    "width": 768
+  },
+  {
+    "broken": 0,
+    "clipped": 0,
+    "closedSections": 0,
+    "largeText": false,
+    "metrics": 5,
+    "objectives": 4,
+    "overflow": false,
+    "people": 3,
+    "width": 1440
+  },
+  {
+    "broken": 0,
+    "clipped": 0,
+    "closedSections": 0,
+    "largeText": false,
+    "metrics": 5,
+    "objectives": 4,
+    "overflow": false,
+    "people": 3,
+    "width": 2560
+  }
+]
