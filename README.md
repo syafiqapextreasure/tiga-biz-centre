@@ -36,8 +36,8 @@ Cloudflare reference: [static asset configuration](https://developers.cloudflare
 
 - Phone and WhatsApp: **01161283216**, international **+60 11-6128 3216**.
 - Fully online throughout Malaysia, especially Sabah and Sarawak.
-- Email retained from the supplied source: cosmosventurekk@gmail.com.
-- Portfolio entries remain explicitly attributed historical Kosmos Group references.
+- Email is currently unset pending a TIGA address. Phone and WhatsApp remain active.
+- The website uses TIGA-only branding, with all 21 portfolio entries retained.
 - The contact form prepares a WhatsApp message. The visitor reviews and sends it in WhatsApp. No message is sent automatically; no form database or file upload exists.
 
 Edit `src/data.mjs` for business details and service content, `src/pages.mjs` for templates, and `public/styles.css` for styling. The form uses its rendered business-number attribute rather than a separate hardcoded destination.
@@ -72,3 +72,7 @@ See [the source reconciliation](docs/content-migration-audit.txt) and [37 respon
 ### About page visibility correction (4 November 2026)
 
 The three profile people, five experience figures and four group entities now appear as visible About sections before the final contact prompt. All four source objectives and the fuller background are restored. Quick links lead to each main section. Ten layout checks cover 320–2560 px in standard and A+ text modes; see `docs/about-content-review.txt` and `docs/about-responsive-checks.json`.
+
+## TIGA branding update (4 November 2026)
+
+At the owner’s request, all public legacy brand mentions, source labels, original-profile notices, old group-entity names and links have been removed. About, Services and Portfolio now use TIGA wording, including page titles and descriptions. The old email was removed from visible links and structured data pending a replacement address. This update supersedes the historical attribution approach documented in earlier audits. All 19 pages are checked for legacy-brand leakage; eight test groups and ten browser checks pass.
