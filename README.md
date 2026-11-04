@@ -36,7 +36,7 @@ Cloudflare reference: [static asset configuration](https://developers.cloudflare
 
 - Phone and WhatsApp: **01161283216**, international **+60 11-6128 3216**.
 - Fully online throughout Malaysia, especially Sabah and Sarawak.
-- Email is currently unset pending a TIGA address. Phone and WhatsApp remain active.
+- Email: tigabizcentre@gmail.com. Phone and WhatsApp remain active.
 - The website uses TIGA-only branding, with all 21 portfolio entries retained.
 - The contact form prepares a WhatsApp message. The visitor reviews and sends it in WhatsApp. No message is sent automatically; no form database or file upload exists.
 
@@ -76,3 +76,5 @@ The three profile people, five experience figures and four group entities now ap
 ## TIGA branding update (4 November 2026)
 
 At the owner’s request, all public legacy brand mentions, source labels, original-profile notices, old group-entity names and links have been removed. About, Services and Portfolio now use TIGA wording, including page titles and descriptions. The old email was removed from visible links and structured data pending a replacement address. This update supersedes the historical attribution approach documented in earlier audits. All 19 pages are checked for legacy-brand leakage; eight test groups and ten browser checks pass.
+
+Confirmed contact email (4 November 2026): `tigabizcentre@gmail.com`, used on Contact, Our Process and the business structured data.
