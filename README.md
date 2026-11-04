@@ -68,3 +68,7 @@ GitHub Actions passed dependency installation, build, all six test groups and th
 The portfolio now preserves all 21 original Cosmos references (7 recruitment, 6 documentation, 8 training/CSR), including full project details and searchable sector/location fields. About restores the original profile’s three people, five reported metrics and four group entities with historical attribution. All twelve service pages include fuller descriptions; Services restores six historical capability areas and four preparation groups. Current TIGA contact details and Malaysia-only coverage remain unchanged. Historical overseas references do not expand current service coverage.
 
 See [the source reconciliation](docs/content-migration-audit.txt) and [37 responsive checks](docs/content-responsive-checks.json). The original EN/BM toggle has not been ported; the restored content is in English.
+
+### About page visibility correction (4 November 2026)
+
+The three profile people, five experience figures and four group entities now appear as visible About sections before the final contact prompt. All four source objectives and the fuller background are restored. Quick links lead to each main section. Ten layout checks cover 320–2560 px in standard and A+ text modes; see `docs/about-content-review.txt` and `docs/about-responsive-checks.json`.
