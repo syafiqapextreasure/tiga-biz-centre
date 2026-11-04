@@ -1,4 +1,4 @@
-export const business={name:'TIGA Biz Centre',phone:'+60 11-6128 3216',phoneRaw:'601161283216',alternate:'+60 11-6128 3216',alternateRaw:'601161283216',email:'',coverage:'Online support across Malaysia, especially Sabah and Sarawak.'};
+export const business={name:'TIGA Biz Centre',phone:'+60 11-6128 3216',phoneRaw:'601161283216',alternate:'+60 11-6128 3216',alternateRaw:'601161283216',email:'tigabizcentre@gmail.com',coverage:'Online support across Malaysia, especially Sabah and Sarawak.'};
 const serviceDescriptions=[
   "Assistance with enterprise and corporate setup documentation, name searches, statutory form collation, and step-by-step guidance for local and foreign business startup readiness.",
   "Support with official statutory forms, local authority paperwork, licensing renewals, and procedural coordination according to current agency guidelines.",
@@ -35,7 +35,7 @@ export const faqs=[
  ['Can I enquire about more than one service?','Yes. Tell us the full scope of your needs so we can discuss a suitable combination, such as business setup, premises documentation and ongoing administration.','Getting started'],
  ['How do I start a WhatsApp enquiry?','Use any WhatsApp enquiry link, or complete the Contact page form. The form opens WhatsApp with a prepared message for you to review and send. It does not send a message automatically.','Contact'],
  ['Should I upload passport copies here?','No. This website does not provide document uploads. Start with a general enquiry and ask the team how to provide any required documents through an appropriate channel.','Documents'],
- ['How do I arrange a consultation?','Contact us through WhatsApp or phone. We currently operate fully online. Explain your request and preferred availability so we can agree on the next step.','Contact']
+ ['How do I arrange a consultation?','Contact us through WhatsApp, phone or email. We currently operate fully online. Explain your request and preferred availability so we can agree on the next step.','Contact']
 ].map((f,i)=>({question:f[0],answer:f[1],category:f[2],id:`faq-${i+1}`}));
 export {projects} from './profile.mjs';
 export const nav=[['/','Overview'],['/about','About'],['/services','Services'],['/our-process','Our process'],['/portfolio','Portfolio'],['/faqs','FAQs'],['/contact','Contact']];
