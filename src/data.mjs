@@ -1,4 +1,4 @@
-export const business={name:'TIGA Biz Centre',phone:'+60 11-6128 3216',phoneRaw:'601161283216',alternate:'+60 11-6128 3216',alternateRaw:'601161283216',email:'cosmosventurekk@gmail.com',coverage:'Online support across Malaysia, especially Sabah and Sarawak.'};
+export const business={name:'TIGA Biz Centre',phone:'+60 11-6128 3216',phoneRaw:'601161283216',alternate:'+60 11-6128 3216',alternateRaw:'601161283216',email:'',coverage:'Online support across Malaysia, especially Sabah and Sarawak.'};
 const serviceDescriptions=[
   "Assistance with enterprise and corporate setup documentation, name searches, statutory form collation, and step-by-step guidance for local and foreign business startup readiness.",
   "Support with official statutory forms, local authority paperwork, licensing renewals, and procedural coordination according to current agency guidelines.",
@@ -8,7 +8,7 @@ const serviceDescriptions=[
   "Arrangement and itinerary booking coordination for flights, transit schedules, and official business trips for company executives, visiting delegations, and incoming personnel.",
   "Document reproduction, multi-page scanning to PDF, digitisation, binding and collation for submission packets. Confirm availability, secure handling and delivery arrangements with our online team.",
   "Structured drafting and visual presentation design for corporate profiles, capability statements, commercial proposals, and tender presentation decks.",
-  "Coordination for recruitment pipelines, candidate preliminary screening, workforce onboarding documentation, and staffing coordination drawing from historical RPO capabilities.",
+  "Coordination for recruitment pipelines, candidate preliminary screening, workforce onboarding documentation, and staffing coordination through RPO coordination.",
   "Assistance with organizing paperwork for civil status, foreign marriage/divorce document dossiers, translation coordination, and liaison with qualified legal professionals.",
   "Administrative coordination of commercial tenancy agreements, property paperwork for business premises, zoning documentation readiness, and signboard licensing collation.",
   "Dependable administrative back-office support, digital file management, official correspondence drafting, translation coordination, and outsourced office administration."
@@ -35,7 +35,7 @@ export const faqs=[
  ['Can I enquire about more than one service?','Yes. Tell us the full scope of your needs so we can discuss a suitable combination, such as business setup, premises documentation and ongoing administration.','Getting started'],
  ['How do I start a WhatsApp enquiry?','Use any WhatsApp enquiry link, or complete the Contact page form. The form opens WhatsApp with a prepared message for you to review and send. It does not send a message automatically.','Contact'],
  ['Should I upload passport copies here?','No. This website does not provide document uploads. Start with a general enquiry and ask the team how to provide any required documents through an appropriate channel.','Documents'],
- ['How do I arrange a consultation?','Contact us through WhatsApp, phone or email. We currently operate fully online. Explain your request and preferred availability so we can agree on the next step.','Contact']
+ ['How do I arrange a consultation?','Contact us through WhatsApp or phone. We currently operate fully online. Explain your request and preferred availability so we can agree on the next step.','Contact']
 ].map((f,i)=>({question:f[0],answer:f[1],category:f[2],id:`faq-${i+1}`}));
 export {projects} from './profile.mjs';
 export const nav=[['/','Overview'],['/about','About'],['/services','Services'],['/our-process','Our process'],['/portfolio','Portfolio'],['/faqs','FAQs'],['/contact','Contact']];

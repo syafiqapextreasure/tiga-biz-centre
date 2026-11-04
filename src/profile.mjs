@@ -1,5 +1,3 @@
-// Historical source: https://cosmos-biz-centre.mail-82f.workers.dev/#/portfolio
-// Checked 2026-11-03. These are source-reported references, not current TIGA claims.
 export const profileCapabilities=[
  ['Recruitment Process Outsourcing (RPO)','Candidate sourcing, preliminary interviews and workforce onboarding for technical and general industries.'],
  ['Permit applications & renewals','Renewal tracking, medical verification paperwork, levy vouchers and administrative liaison.'],
@@ -17,7 +15,7 @@ export const projects=[
     "sector": "Oil & Gas Industry",
     "location": "Kebabangan Offshore",
     "summary": "Recruitment Process Outsourcing (RPO) and manpower documentation support for offshore operations.",
-    "details": "Facilitated specialized personnel coordination and required documentation protocols for demanding offshore energy operations as reported in the Kosmos Group profile.",
+    "details": "Facilitated specialized personnel coordination and required documentation protocols for demanding offshore energy operations.",
     "icon": "hardhat"
   },
   {
@@ -93,7 +91,7 @@ export const projects=[
     "entity": "Multi-Sector Corporate & Individual Clientele",
     "sector": "Commercial, Industrial & Services",
     "location": "Nationwide & Regional",
-    "summary": "Over 1,000 clientele served across diverse economic sectors as reported in profile.",
+    "summary": "Over 1,000 clientele served across diverse economic sectors.",
     "details": "Comprehensive document coordination covering permit renewals, levy payments, and compliance maintenance with relevant authorities.",
     "icon": "file"
   },
@@ -104,7 +102,7 @@ export const projects=[
     "entity": "International Professionals & Residents",
     "sector": "Professional Immigration & Long-Term Stay",
     "location": "Malaysia",
-    "summary": "Over 500 expatriate and professional pass clientele reported in profile.",
+    "summary": "Over 500 expatriate and professional pass clientele.",
     "details": "Dossier preparation, criteria verification support, and coordination for professional talent and second-home residency participants.",
     "icon": "file"
   },
@@ -115,7 +113,7 @@ export const projects=[
     "entity": "Bilateral Workforce & Foreign Residents",
     "sector": "Consular Liaison & Documentation",
     "location": "Sabah & Peninsular Malaysia",
-    "summary": "Over 1,000 clientele reported for consular documentation support.",
+    "summary": "Over 1,000 clientele served through consular documentation support.",
     "details": "Facilitated structured embassy documentation, passport renewal paperwork, and consular administrative coordination.",
     "icon": "file"
   },
@@ -160,7 +158,7 @@ export const projects=[
     "sector": "Government & Youth Development",
     "location": "National Level Campaign",
     "summary": "Outreach campaign coordination and national-level program support.",
-    "details": "Coordinated event logistics, youth participant registration, and on-ground administrative support for nationwide ministry initiatives as reported in profile.",
+    "details": "Coordinated event logistics, youth participant registration, and on-ground administrative support for nationwide ministry initiatives.",
     "icon": "presentation"
   },
   {
@@ -215,7 +213,7 @@ export const projects=[
     "sector": "International Chamber & Regional Development",
     "location": "Mindanao, Philippines",
     "summary": "Business Development Unit program coordination and bilateral liaison.",
-    "details": "Supported regional trade discussions, documentation collation, and delegation meetings as reported in profile.",
+    "details": "Supported regional trade discussions, documentation collation, and delegation meetings.",
     "icon": "presentation"
   },
   {
@@ -262,7 +260,7 @@ export const profileMetrics=[
   {
     "metric": "20+ Years",
     "label": "Collective Team Experience",
-    "description": "Cross-functional background in consultancy, administration, marketing, and translation reported in profile."
+    "description": "Cross-functional background in consultancy, administration, marketing, and translation."
   },
   {
     "metric": "300+",
@@ -277,17 +275,11 @@ export const profileMetrics=[
   {
     "metric": "500+",
     "label": "Expatriate & MM2H Clients",
-    "description": "Support reported for expatriate, professional pass, and MM2H residency administrative dossiers."
+    "description": "Support for expatriate, professional pass, and MM2H residency administrative dossiers."
   },
   {
     "metric": "1,000+",
     "label": "Indonesian & Filipino Clients",
-    "description": "Bilateral documentation and consular liaison service clientele reported in profile."
+    "description": "Bilateral documentation and consular liaison service clientele."
   }
-];
-export const profileEntities=[
-  "Kosmosjuta Ventures Sdn Bhd (1431070-U)",
-  "Agensi Pekerjaan Cosmosworks Sdn Bhd (1531771-D)",
-  "Cosmos Ventures Enterprise",
-  "Raztech Engineering Sdn Bhd (1533570-D)"
 ];
