@@ -52,6 +52,24 @@ test('clean URL redirects preserve query parameters',async()=>{
   assert.equal(res.status,301);assert.equal(res.headers.get('location'),'https://example.test'+to+'?source=check');
  }
 });
+
+test('public domain variants consolidate to HTTPS www in one hop without redirecting local preview',async()=>{
+ for(const host of ['http://tigabizcentre.com','http://www.tigabizcentre.com','https://tigabizcentre.com','https://tiga-biz-centre.mail-82f.workers.dev']){
+  for(const route of ['/about.html','/about/','/about/index.html','/assets/logo.webp','/robots.txt']){
+   const res=await worker.fetch(new Request(host+route+'?utm_source=test'),{});
+   assert.equal(res.status,301);
+   const target=route.startsWith('/about')?'/about':route;
+   assert.equal(res.headers.get('location'),'https://www.tigabizcentre.com'+target+'?utm_source=test');
+  }
+ }
+ const env={ASSETS:{fetch:async()=>new Response('__SITE_ORIGIN__/',{headers:{'content-type':'text/html'}})}};
+ for(const origin of ['https://www.tigabizcentre.com','http://127.0.0.1:5186']){
+  const res=await worker.fetch(new Request(origin+'/'),env);
+  assert.equal(res.status,200);assert.equal(await res.text(),origin+'/');
+ }
+ const head=await worker.fetch(new Request('http://tigabizcentre.com/about',{method:'HEAD'}),{});
+ assert.equal(head.status,301);assert.equal(await head.text(),'');
+});
 test('Worker replaces origin in HTML, sitemap and robots, preserves status and handles HEAD',async()=>{
  for(const [route,type]of [['/about','text/html'],['/sitemap.xml','application/xml'],['/robots.txt','text/plain']]){
   const env={SITE_URL:'https://tiga.example/path',ASSETS:{fetch:async()=>new Response('__SITE_ORIGIN__/about',{headers:{'content-type':type,etag:'old','content-length':'99'}})}};

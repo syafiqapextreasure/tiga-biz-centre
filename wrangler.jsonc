@@ -3,11 +3,12 @@
   "name": "tiga-biz-centre",
   "main": "src/worker.mjs",
   "compatibility_date": "2026-11-03",
+  "vars": { "SITE_URL": "https://www.tigabizcentre.com" },
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
     "html_handling": "drop-trailing-slash",
     "not_found_handling": "404-page",
-    "run_worker_first": ["/*", "!/assets/*", "!/styles.css", "!/app.js"]
+    "run_worker_first": ["/*"]
   }
 }

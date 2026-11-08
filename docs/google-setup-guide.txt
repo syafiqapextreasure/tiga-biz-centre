@@ -1,0 +1,102 @@
+TIGA BIZ CENTRE — GOOGLE SEARCH CONSOLE AND GA4 SETUP
+Prepared 9 November 2026
+Website: https://www.tigabizcentre.com/
+Business account suggestion: tigabizcentre@gmail.com
+
+PART 1 — GOOGLE SEARCH CONSOLE
+1. Sign in at https://search.google.com/search-console/ using the Google account
+   that should own TIGA's website reporting.
+2. Choose Add property, then Domain. Enter tigabizcentre.com (no https, www or
+   trailing slash). This covers both protocols and all subdomains.
+3. Copy the exact TXT verification value Google provides. It begins with
+   google-site-verification=. Each account/property has its own token.
+4. In Cloudflare, select tigabizcentre.com, then DNS > Records > Add record:
+   Type: TXT
+   Name: @
+   Content: paste Google's complete verification value
+   TTL: Auto
+   Save. TXT records have no orange-cloud proxy switch. If Cloudflare is not
+   the authoritative DNS provider, add it at the provider hosting the nameservers.
+5. Return to Search Console and click Verify. If propagation is incomplete,
+   check the saved record and retry later. Keep the TXT record after success.
+6. Open Indexing > Sitemaps. Submit the full URL:
+   https://www.tigabizcentre.com/sitemap.xml
+   If the interface supplies the domain prefix, enter only sitemap.xml.
+   The current sitemap contains 19 pages. Submission is not proof of indexing.
+7. In URL Inspection, paste each of these important URLs, run Test Live URL,
+   then Request indexing if the page is eligible:
+   https://www.tigabizcentre.com/
+   https://www.tigabizcentre.com/services/foreign-worker-documentation
+   https://www.tigabizcentre.com/services/business-registration-startup
+   https://www.tigabizcentre.com/services/business-proposal-company-profile
+   Submit the sitemap for the remaining pages rather than requesting repeatedly.
+8. Once reports populate, check Pages, HTTPS, Core Web Vitals, Security issues,
+   Manual actions and Search results performance. Inspect the Google-selected
+   canonical on key URLs: the preferred origin is HTTPS www. Redirected aliases
+   being excluded is expected; important final pages being blocked needs review.
+9. If the live test cannot fetch a page, inspect Cloudflare security events for
+   the corresponding request before changing firewall settings. Preserve general
+   protection and resolve only confirmed legitimate crawler blocks.
+
+PART 2 — GOOGLE ANALYTICS 4
+1. Open https://analytics.google.com/ and choose Start measuring, or Admin >
+   Create > Account if you already use Analytics. Account name: TIGA Biz Centre.
+   Review the data-sharing selections rather than assuming every option is needed.
+2. Create a property named TIGA Biz Centre Website. Reporting time zone:
+   Malaysia (GMT+08:00). Currency: Malaysian Ringgit (MYR).
+3. Select the closest industry and actual business size. Choose Generate leads
+   as the business objective, then review and accept Google's terms yourself.
+4. Create a Web data stream:
+   Protocol: https://
+   Website URL: www.tigabizcentre.com
+   Stream name: TIGA Website
+5. Copy the Measurement ID, which starts G-. This is different from the numeric
+   property ID. Send the G- ID for installation; no password is required.
+6. Installation still needs a code change. No GA tag is active now. This site is
+   a custom Cloudflare Worker, with a restrictive Content-Security-Policy, so
+   simply pasting Google's inline tag will not work. Integrate the Google tag
+   once, use an external first-party initializer or a secure nonce, and allow
+   only necessary Google tag/Analytics endpoints in the CSP. Do not disable
+   the CSP or install the same tag through both direct code and Tag Manager.
+7. Before enabling collection, review enhanced measurement. This contact form
+   prepares a WhatsApp message containing user-entered contact details. Avoid
+   automatic form-content collection and outgoing WhatsApp URL query strings.
+   Use explicit safe contact events instead of sending full outbound URLs or
+   form values. Reflect the final tracking behaviour in the privacy information
+   and apply consent controls where required.
+8. After installation, open the live site and visit several pages. Check
+   Reports > Realtime or Tag Assistant, with browser consent granted where
+   applicable. Verify one page_view per navigation, the correct G- destination,
+   no CSP errors and no personal form fields in the event payloads.
+9. Recommended custom events for implementation:
+   contact_click with channel=whatsapp, phone or email
+   whatsapp_enquiry_open when a valid contact form opens WhatsApp
+   Only record safe channel/page/service values. These actions indicate intent;
+   they do not prove that a WhatsApp message was sent or a sale was made.
+   Mark the chosen contact event as a key event after it is implemented and
+   verified. Track actual qualified enquiries separately in the business process.
+10. Link Search Console: Analytics Admin > Product links > Search Console Links
+    > Link. Select the verified tigabizcentre.com property and TIGA Website web
+    stream, review and submit. Use an account that is Search Console owner and
+    GA4 Editor. Publish the Search Console report collection from Reports >
+    Library if it is not visible.
+
+WEEKLY REPORT TO WATCH
+Search Console: relevant search queries, impressions, clicks, CTR, landing pages
+and indexing issues. Use query/page trends rather than one isolated rank.
+GA4: organic-search sessions, landing-page engagement and contact-intent events.
+Business: actual qualified WhatsApp/phone/email enquiries by service and region.
+Compare periods once enough real data exists; a new property starts collecting
+after installation and does not recreate historical visitor activity.
+
+OFFICIAL GUIDES
+Property and DNS verification:
+https://support.google.com/webmasters/answer/34592
+https://support.google.com/webmasters/answer/9008080
+Sitemaps and indexing requests:
+https://support.google.com/webmasters/answer/7451001
+https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl
+GA4 account, property, stream and tag setup:
+https://support.google.com/analytics/answer/9304153
+Link Search Console and Analytics:
+https://support.google.com/analytics/answer/10737381

@@ -1,4 +1,5 @@
 import {services,faqs,projects,business} from './data.mjs';
+import {serviceSeo} from './seo.mjs';
 import {profileTeam,profileMetrics,profileCapabilities} from './profile.mjs';
 import {hero,icon,image,button,whatsapp,arrow,ticks,faq,search,filters,miniProcess,esc} from './components.mjs';
 const sectionHeading=(text)=>`<div class="section-title"><h2>${text}</h2><span aria-hidden="true"></span></div>`;
@@ -74,7 +75,7 @@ export const pages=[
 ];
 export function detailPage(s){
  const art=s.category==='People & operations'?'hero-about':s.category==='Business setup'?'hero-services':'hero-home';
- return {route:'/services/'+s.slug,page:'service-detail',service:s,title:s.title+' | TIGA Biz Centre',description:s.summary+' Online guidance and coordination for your requirements. Ask TIGA for a tailored checklist.',body:()=>`
+ return {route:'/services/'+s.slug,page:'service-detail',service:s,title:serviceSeo[s.slug]?.title||s.title+' | TIGA Biz Centre',description:serviceSeo[s.slug]?.description||s.summary,body:()=>`
  <header class="detail-hero">
   <div class="detail-heading"><p class="eyebrow">Business • Documents • Support</p><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span>/</span><a href="/services">Services</a><span>/</span><span>${s.number}</span></nav><p class="category">${s.category}</p><h1>${esc(s.title)}</h1><p class="detail-summary">${s.summary}</p>${whatsapp('Enquire about this service','primary',s.title)}</div>
   <div class="detail-art" aria-hidden="true">${image(art,'','',true)}</div>

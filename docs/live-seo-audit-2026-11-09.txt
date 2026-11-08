@@ -1,0 +1,145 @@
+TIGA BIZ CENTRE — LIVE SEO / AEO / GEO AUDIT
+9 November 2026 | https://www.tigabizcentre.com/
+
+SCOPE AND EVIDENCE
+Public HTTP responses and source HTML were checked for all 19 sitemap URLs,
+robots.txt, protocol/hostname variants, clean-URL redirects and a missing URL.
+This is not an account-level Search Console audit, Google-selected canonical
+report, keyword-volume study, backlink audit or field Core Web Vitals test.
+HTTP accessibility from this audit does not prove that genuine search crawlers
+pass every Cloudflare firewall rule. Verify with Search Console's live test.
+
+FINDINGS AND CHANGES
+1. High priority: HTTP, HTTPS apex, HTTPS www and the Workers subdomain each
+   returned independently indexable pages, with a canonical matching the host.
+   The Worker now consolidates those known public hosts to
+   https://www.tigabizcentre.com using permanent 301 redirects, preserving paths
+   and query parameters. Domain and clean-path corrections use one redirect.
+   SITE_URL is fixed in wrangler.jsonc. Local development remains accessible.
+   The Worker runs first for assets too, so host/protocol redirects are consistent.
+2. Medium priority: all 12 service descriptions shared generic trailing text;
+   the foreign-worker description was especially lengthy. They now describe
+   each actual service, including confirmed regional relevance where useful.
+   Three priority service titles now identify location or commercial intent.
+   Meta descriptions help describe results; they are not a ranking guarantee,
+   and Google can select different result titles or snippets.
+3. Passed: all 19 sitemap URLs returned 200, had unique titles and one H1,
+   were not marked noindex and contained parseable JSON-LD. Organization,
+   WebSite and WebPage data are present, with breadcrumbs on internal pages
+   and Service data on the 12 detail pages. No fake physical address was added.
+4. Passed: robots.txt permits crawling and references the sitemap; the sitemap
+   lists exactly 19 clean URLs. Missing pages return 404 with noindex metadata.
+   Important content and navigation are in HTML, rather than requiring JS.
+5. Measurement gap: no Google Analytics tag was found in source. Search Console
+   ownership/indexing state cannot be determined without account access.
+   Current CSP allows only same-origin scripts/connections. A Google tag must
+   be integrated with a suitable CSP change; pasting its default inline snippet
+   alone would be blocked. Analytics has not been installed or activated.
+6. Content opportunity: service pages offer useful scope and preparation lists,
+   but many answers are still broad. Add first-hand, service-specific answers
+   and documented case studies instead of more generic service descriptions.
+   No content, pricing, credentials, outcomes or customer reviews were invented.
+7. Language opportunity: the site is currently English. Publish professionally
+   reviewed Bahasa Malaysia pages if TIGA can support those enquiries. Only add
+   hreflang after real equivalent translations exist. Do not create repeated
+   city pages that merely replace a location name.
+
+PRIORITY KEYWORD MAP — CANDIDATES, NOT VERIFIED SEARCH VOLUMES
+Foreign-worker page (first priority)
+  foreign worker documentation assistance Sabah
+  foreign worker support Sarawak
+  medical check-up coordination for foreign workers
+  bantuan dokumen pekerja asing Sabah / Sarawak (future BM content)
+  bank, insurance and Labour Department document assistance
+Business-registration page
+  business registration assistance Malaysia
+  business setup documentation Sabah / Sarawak
+  Use jurisdiction-specific guidance; do not imply identical procedures everywhere.
+Company-profile page
+  company profile writing Malaysia
+  business proposal preparation Sabah / Sarawak
+Home / Services
+  online business documentation support Malaysia
+  document preparation assistance Sabah / Sarawak
+
+These are selected for fit with TIGA's stated services and commercial intent,
+not a claim of highest volume, low competition or guaranteed conversions.
+Refine them using real Search Console queries and enquiry quality after launch.
+
+COMPETITOR CONTENT BENCHMARKS
+LVA: https://lva.com.my/services/
+  Overlap: foreign-worker administration, Labour Department applications,
+  insurance, renewals and medical coordination. Their specific service lists
+  are a useful depth benchmark. Their page lists a Penang address; it is not
+  evidence of being TIGA's leading Sabah/Sarawak search competitor.
+TSM: https://www.mytsm.com.my/our-services/permit-renewal/
+  Overlap: work-permit renewal and supporting insurance documentation.
+  Benchmark: a dedicated service explanation. Do not copy its requirements
+  into Sabah/Sarawak content without verifying the relevant jurisdiction.
+3E Accounting:
+https://www.3ecpa.com.my/services/company-setup/malaysia-company-incorporation-services/
+  Overlap: business formation search intent. Benchmark: detailed service and
+  package information. TIGA should distinguish its documentation coordination
+  role and only list services/qualifications it actually provides.
+These are service-overlap benchmarks, not a measured ranking or market-share list.
+
+AEO / GEO ACTIONS
+- Keep a short direct answer near the beginning of each service: who it helps,
+  what TIGA coordinates, online coverage, and how to enquire. Existing scope
+  and preparation sections provide a useful starting point.
+- Add the questions customers actually ask: what to prepare, what is included,
+  what affects fees, what affects timing, and which steps depend on authorities.
+  Publish actual prices or turnaround ranges only when the owner confirms them.
+- Expand a few portfolio items into first-hand case studies with date, problem,
+  TIGA's specific work and evidence-supported outcome, with client permission.
+  Confirm every experience figure and project claim reflects this business or
+  clearly described team experience. A brand change alone is not substantiation.
+- Use named team expertise, real business details and consistent contact data.
+  Earn relevant mentions from actual business partners and professional bodies.
+- Keep structured data aligned with visible content. No fabricated reviews,
+  sameAs links, offices, certifications or organisation history.
+- Google's AI search guidance relies on the same SEO foundations. There is no
+  special AI schema or llms.txt requirement, nor a guaranteed AI citation method.
+  TIGA should not expect FAQ rich results reserved largely for authoritative
+  government and health sites.
+- Current robots.txt does not disallow OAI-SearchBot. Check Cloudflare security
+  events for genuine crawler challenges if AI discovery is desired. Search
+  crawling and model-training crawler controls are different choices.
+
+NEXT 30 DAYS
+Now: confirm canonical redirects after deployment; verify Search Console;
+submit sitemap; inspect Home and priority service pages; create the GA4 stream.
+Week 1: review indexing exclusions, selected canonicals, HTTPS and security
+reports. Fix actual crawl failures. Test mobile performance with PageSpeed
+Insights; record lab and field results separately, with field data if available.
+Weeks 2–4: publish owner-reviewed answers and two well-evidenced case studies;
+consider BM versions of the highest-demand service pages. Link them from
+relevant service pages. Review search impressions, relevant queries, organic
+landing pages and qualified enquiries weekly. Avoid repeated indexing requests,
+bulk backlink buying and repetitive city pages.
+
+GOOGLE BUSINESS PROFILE
+TIGA currently operates fully online. Google's eligibility rules exclude
+online-only businesses without qualifying in-person customer contact. Do not
+create a pretend address to obtain Maps visibility. Normal website indexing,
+Search Console and Google Analytics are separate and remain appropriate.
+
+VERIFICATION
+Local build and all nine automated test groups passed after these code changes.
+Tests cover 19 pages, content preservation, redirect destinations/query strings,
+preview access, HEAD responses, sitemap, 404, schema and enquiry behaviour.
+No layout changes were made in this update. Live deployment results are recorded
+in the accompanying before/after audit files rather than assumed from local tests.
+Rankings, indexing speed, traffic and AI citations cannot be guaranteed.
+
+PRIMARY REFERENCES
+Canonicalisation:
+https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls
+Google AI search guidance:
+https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+FAQ eligibility:
+https://developers.google.com/search/blog/2023/08/howto-faq-changes
+Google Business Profile eligibility:
+https://support.google.com/business/answer/13763036
+OpenAI crawler controls:
+https://developers.openai.com/api/docs/bots
