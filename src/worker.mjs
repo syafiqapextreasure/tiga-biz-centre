@@ -13,9 +13,13 @@ export default {async fetch(request,env){
  if(!type.includes('text/html')&&!['/sitemap.xml','/robots.txt'].includes(url.pathname))return response;
  const headers=new Headers(response.headers);
  headers.set('X-Content-Type-Options','nosniff');headers.set('Referrer-Policy','strict-origin-when-cross-origin');headers.set('X-Frame-Options','DENY');headers.set('Permissions-Policy','camera=(), microphone=(), geolocation=()');
- headers.set('Content-Security-Policy',"default-src 'self'; img-src 'self' data:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; form-action https://wa.me; base-uri 'self'; frame-ancestors 'none'; object-src 'none'");
+ headers.set('Content-Security-Policy',"default-src 'self'; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' https://www.googletagmanager.com; connect-src 'self' https://www.googletagmanager.com https://*.google-analytics.com https://*.google.com; frame-src https://www.googletagmanager.com; form-action https://wa.me; base-uri 'self'; frame-ancestors 'none'; object-src 'none'");
  headers.delete('content-length');headers.delete('etag');headers.set('Cache-Control','public, max-age=0, must-revalidate');
  if(request.method==='HEAD')return new Response(null,{status:response.status,headers});
- const body=(await response.text()).replaceAll('__SITE_ORIGIN__',origin);
+ let body=(await response.text()).replaceAll('__SITE_ORIGIN__',origin);
+ if(type.includes('text/html')&&url.origin===productionOrigin){
+  body=body.replace('<head>','<head><script src="/tag-manager.js"></script>')
+   .replace(/<body\b[^>]*>/,match=>match+'<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3KKB945" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>');
+ }
  return new Response(body,{status:response.status,headers});
 }};

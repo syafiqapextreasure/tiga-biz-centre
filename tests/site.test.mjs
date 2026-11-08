@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import vm from 'node:vm';
 import {readFile,stat} from 'node:fs/promises';
 import path from 'node:path';
 import worker from '../src/worker.mjs';
@@ -12,6 +13,24 @@ import {caseStudies} from '../src/case-studies.mjs';
 import {esc} from '../src/components.mjs';
 const routes=JSON.parse(await readFile('src/routes.json','utf8'));
 const readRoute=r=>readFile(path.join('dist',r==='/'?'index.html':r.slice(1)+'/index.html'),'utf8');
+
+test('GTM loads on production HTML only and preserves CSP restrictions',async()=>{
+ const env={ASSETS:{fetch:async()=>new Response('<html><head></head><body class="page-home">Hello</body></html>',{headers:{'content-type':'text/html'}})}};
+ for(const origin of ['https://www.tigabizcentre.com','http://127.0.0.1:5186']){
+  const res=await worker.fetch(new Request(origin+'/'),env),html=await res.text();
+  assert.equal(html.includes('<script src="/tag-manager.js"></script>'),origin.startsWith('https://'));
+  assert.equal(html.includes('ns.html?id=GTM-M3KKB945'),origin.startsWith('https://'));
+  const csp=res.headers.get('content-security-policy');assert(csp.includes("script-src 'self' https://www.googletagmanager.com;"));assert(!csp.includes('unsafe-eval'));assert(csp.includes("object-src 'none'"));
+ }
+ const xml=await worker.fetch(new Request('https://www.tigabizcentre.com/sitemap.xml'),{ASSETS:{fetch:async()=>new Response('<head></head>',{headers:{'content-type':'application/xml'}})}});assert.equal(await xml.text(),'<head></head>');
+ const code=await readFile('dist/tag-manager.js','utf8');
+ for(const hostname of ['www.tigabizcentre.com','127.0.0.1']){
+  const scripts=[],window={dataLayer:[{existing:true}]};
+  vm.runInNewContext(code,{location:{hostname},window,document:{createElement:()=>({}),head:{appendChild:s=>scripts.push(s)}}});
+  assert.equal(scripts.length,hostname==='www.tigabizcentre.com'?1:0);
+  if(scripts.length){assert.equal(window.dataLayer[0].existing,true);assert.equal(window.dataLayer[1].event,'gtm.js');assert.equal(scripts[0].src,'https://www.googletagmanager.com/gtm.js?id=GTM-M3KKB945');assert.equal(scripts[0].async,true);}
+ }
+});
 test('all 25 rendered routes have unique metadata, valid structured data and working internal targets',async()=>{
  assert.equal(routes.length,25);const titles=new Set();
  for(const route of routes){const html=await readRoute(route);const title=html.match(/<title>(.*?)<\/title>/)[1];assert(!titles.has(title));titles.add(title);

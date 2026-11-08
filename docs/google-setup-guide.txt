@@ -3,6 +3,16 @@ Prepared 9 November 2026
 Website: https://www.tigabizcentre.com/
 Business account suggestion: tigabizcentre@gmail.com
 
+INSTALLATION UPDATE — 9 November 2026
+The owner supplied GTM-M3KKB945. This container is now integrated into the
+production Worker with a compatible Content-Security-Policy. Its published
+script contains GA4 ID G-Y48STDP5G1. Do not install a second direct GA tag or
+create a duplicate property using the original first-time setup steps below.
+Open that GA4 property's Realtime report to verify event receipt, and use GTM
+Preview to check tag firing. Account-level receipt has not been verified here.
+The original instructions below remain a reference for account setup; steps
+asking for a Measurement ID and code installation are superseded by this update.
+
 PART 1 — GOOGLE SEARCH CONSOLE
 1. Sign in at https://search.google.com/search-console/ using the Google account
    that should own TIGA's website reporting.
