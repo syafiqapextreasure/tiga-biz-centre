@@ -1,0 +1,44 @@
+TIGA SERVICE CONTENT, BAHASA MALAYSIA AND CASE STUDIES
+9 November 2026
+
+Implemented
+- All 12 English service pages now open with a direct service/coverage answer.
+- Service-specific questions cover first-enquiry preparation, pricing factors,
+  timing dependencies and relevant service boundaries. No fixed fees, delivery
+  dates, approval promises or new business credentials were invented.
+- Related-service links connect the relevant supporting pages.
+- Four equivalent Bahasa Malaysia service pages cover foreign-worker support,
+  business registration, company profiles/proposals and general administration.
+  Their content, controls and navigation labels are translated; links to pages
+  still available only in English are labelled EN. English/Bahasa Melayu links
+  appear on each pair, with reciprocal hreflang, self-canonicals and language
+  metadata. These are four translated service editions, not a translation of
+  the entire website. No external professional language review is claimed.
+- FAQPage markup matches the visible service questions and answers in each
+  language. This is semantic markup, not a promise of Google FAQ rich results.
+- Two project case studies use the owner's existing portfolio records:
+  Volsar Group Sdn Bhd — Kebabangan Offshore;
+  Transwater API Sdn Bhd — SAMUR Plant, Sipitang, Sabah.
+  The project identity, location, sector, summary and detailed scope are reused
+  from src/profile.mjs. Scope bullets restate those records. No success metrics,
+  dates, fees, customer quotes or independently verified results were added.
+  Links connect Portfolio and relevant services to the case-study pages.
+- All 21 portfolio entries remain present. The sitemap now contains 25 pages.
+
+Validation
+Build and all 11 automated test groups passed. Tests check all 25 routes,
+metadata, internal targets, content preservation, enquiry behaviour, clean
+URLs, canonical redirects, sitemap, FAQ text/schema parity, reciprocal language
+links and case-study links/content.
+21 browser viewport checks: seven representative routes at 390, 768 and 1440 px.
+No horizontal overflow or broken images detected. Language navigation, native
+FAQ expansion, mobile menu and the translated A+ label were checked in-browser.
+Screenshots and measurements are delivered in outputs/seo-content-review.
+
+Sources used for implementation guidance
+https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+https://developers.google.com/search/docs/specialty/international/localized-versions
+https://developers.google.com/search/blog/2023/08/howto-faq-changes
+
+This update supersedes the earlier audit's recommendation to create these
+content items. Indexing, ranking positions and AI citations are not guaranteed.

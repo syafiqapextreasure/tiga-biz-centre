@@ -6,11 +6,14 @@ import worker from '../src/worker.mjs';
 import {enquiryUrl} from '../public/enquiry.js';
 import {projects,profileTeam,profileMetrics} from '../src/profile.mjs';
 import {services} from '../src/data.mjs';
+import {serviceGuides} from '../src/service-guides.mjs';
+import {malayContent} from '../src/locales.mjs';
+import {caseStudies} from '../src/case-studies.mjs';
 import {esc} from '../src/components.mjs';
 const routes=JSON.parse(await readFile('src/routes.json','utf8'));
 const readRoute=r=>readFile(path.join('dist',r==='/'?'index.html':r.slice(1)+'/index.html'),'utf8');
-test('all 19 rendered routes have unique metadata, valid structured data and working internal targets',async()=>{
- assert.equal(routes.length,19);const titles=new Set();
+test('all 25 rendered routes have unique metadata, valid structured data and working internal targets',async()=>{
+ assert.equal(routes.length,25);const titles=new Set();
  for(const route of routes){const html=await readRoute(route);const title=html.match(/<title>(.*?)<\/title>/)[1];assert(!titles.has(title));titles.add(title);
   assert.equal((html.match(/<h1[ >]/g)||[]).length,1,route);
   assert(html.includes(`href="__SITE_ORIGIN__${route}"`),route);
@@ -20,7 +23,7 @@ test('all 19 rendered routes have unique metadata, valid structured data and wor
   if(route!=='/portfolio')assert(!/Brunei/i.test(html),route);
   const graph=JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1])['@graph'];
   assert.equal(graph.find(i=>i['@type']==='Organization').telephone,'+60 11-6128 3216');
-  if(route.startsWith('/services/'))assert(graph.some(i=>i['@type']==='Service'));
+  if(route.startsWith('/services/')||route.startsWith('/ms/'))assert(graph.some(i=>i['@type']==='Service'));
   for(const [,url]of html.matchAll(/(?:href|src)="(\/[^"#?]*)(?:[^\"]*)"/g)){
    if(routes.includes(url)||url==='/')continue;
    assert((await stat(path.join('dist',url.slice(1)))).isFile(),`${route}: ${url}`);
@@ -82,8 +85,40 @@ test('Worker replaces origin in HTML, sitemap and robots, preserves status and h
  const post=await worker.fetch(new Request('https://example.test/contact',{method:'POST'}),{});assert.equal(post.status,405);
 });
 test('sitemap covers exactly the rendered pages and missing page is noindex',async()=>{
- const xml=await readFile('dist/sitemap.xml','utf8');assert.equal((xml.match(/<loc>/g)||[]).length,19);for(const r of routes)assert(xml.includes('__SITE_ORIGIN__'+r+'</loc>'));
+ const xml=await readFile('dist/sitemap.xml','utf8');assert.equal((xml.match(/<loc>/g)||[]).length,25);for(const r of routes)assert(xml.includes('__SITE_ORIGIN__'+r+'</loc>'));
  assert((await readFile('dist/404.html','utf8')).includes('noindex,follow'));
+});
+
+test('service answers match visible content and Malay language alternates are reciprocal and self-canonical',async()=>{
+ for(const s of services){
+  const html=await readRoute('/services/'+s.slug),guide=serviceGuides[s.slug];
+  assert(html.includes(esc(guide.intro)));
+  const graph=JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1])['@graph'];
+  const faq=graph.find(n=>n['@type']==='FAQPage');assert.equal(faq.mainEntity.length,guide.answers.length);
+  for(const [i,[q,a]]of guide.answers.entries()){assert(html.includes(esc(q)));assert(html.includes(esc(a)));assert.equal(faq.mainEntity[i].acceptedAnswer.text,a);}
+ }
+ for(const [slug,m]of Object.entries(malayContent)){
+  const en='/services/'+slug;
+  for(const route of [en,m.route]){const html=await readRoute(route);
+   assert(html.includes('hreflang="en-MY" href="__SITE_ORIGIN__'+en+'"'));
+   assert(html.includes('hreflang="ms-MY" href="__SITE_ORIGIN__'+m.route+'"'));
+   assert(html.includes('rel="canonical" href="__SITE_ORIGIN__'+route+'"'));
+   assert(html.includes('href="'+(route===en?m.route:en)+'" hreflang='));
+  }
+  const html=await readRoute(m.route);assert(html.includes('<html lang="ms-MY">'));
+  const graph=JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1])['@graph'];
+  const faq=graph.find(n=>n['@type']==='FAQPage');assert.equal(faq.mainEntity.length,m.answers.length);
+  for(const [i,[q,a]]of m.answers.entries()){assert(html.includes(esc(q)));assert(html.includes(esc(a)));assert.equal(faq.mainEntity[i].acceptedAnswer.text,a);}
+ }
+});
+
+test('case studies preserve the existing portfolio record and are linked from relevant services',async()=>{
+ const portfolio=await readRoute('/portfolio');
+ for(const c of caseStudies){const html=await readRoute(c.route);
+  for(const field of ['title','location','sector','summary','details'])assert(html.includes(esc(c.project[field])),c.id+': '+field);
+  assert(portfolio.includes('href="'+c.route+'"'));
+  for(const slug of c.related)assert((await readRoute('/services/'+slug)).includes('href="'+c.route+'"'));
+ }
 });
 test('WhatsApp enquiry keeps special characters and targets the confirmed number',()=>{
  const url=new URL(enquiryUrl({name:'A & B',phone:'+60 11 1234567',service:'Forms & Documentation',message:'Line 1\n100% ready? #yes'},'601161283216'));

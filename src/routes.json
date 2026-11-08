@@ -17,5 +17,11 @@
   "/services/recruitment-manpower-support",
   "/services/legal-document-coordination",
   "/services/property-business-support",
-  "/services/general-business-admin"
+  "/services/general-business-admin",
+  "/ms/perkhidmatan/sokongan-pekerja-asing",
+  "/ms/perkhidmatan/pendaftaran-perniagaan",
+  "/ms/perkhidmatan/profil-syarikat-cadangan-perniagaan",
+  "/ms/perkhidmatan/pentadbiran-perniagaan",
+  "/portfolio/volsar-group",
+  "/portfolio/transwater-api"
 ]

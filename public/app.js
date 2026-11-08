@@ -7,7 +7,7 @@ scrim?.addEventListener('click',closeMenu);
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&document.body.classList.contains('menu-open')){closeMenu();menu.focus();}if(e.key==='Tab'&&document.body.classList.contains('menu-open')){const focusables=[menu,...$$('a',sidebar)],first=focusables[0],last=focusables.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}});
 matchMedia('(min-width:901px)').addEventListener('change',e=>{if(e.matches)closeMenu();});
 const size=$('#text-size');let larger=false;try{larger=localStorage.getItem('tiga-large-text')==='true'}catch{}
-function setSize(on){document.body.classList.toggle('large-text',on);size?.setAttribute('aria-pressed',String(on));size?.setAttribute('aria-label',on?'Use standard text size':'Increase text size');}
+function setSize(on){document.body.classList.toggle('large-text',on);size?.setAttribute('aria-pressed',String(on));size?.setAttribute('aria-label',document.documentElement.lang==='ms-MY'?(on?'Gunakan saiz teks biasa':'Besarkan teks'):(on?'Use standard text size':'Increase text size'));}
 setSize(larger);size?.addEventListener('click',()=>{larger=!larger;setSize(larger);try{localStorage.setItem('tiga-large-text',String(larger))}catch{}});
 for(const scope of $$('.filter-scope')){
  const items=$$('.filter-item',scope),buttons=$$('[data-filter]',scope),input=$('input[type=search]',scope),status=$('.filter-status',scope),empty=$('.empty-state',scope);let category='All';
