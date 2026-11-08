@@ -26,7 +26,7 @@ npm ci
 npm run deploy
 ```
 
-The default Worker name is `tiga-biz-centre`. Add your custom domain in the Worker settings. Optionally set the runtime variable `SITE_URL` to your preferred HTTPS origin, such as `https://your-final-domain.com`. If omitted, canonical URLs, Open Graph URLs, structured data, robots.txt and sitemap.xml use the incoming request origin. A final domain has not been supplied; no invented domain is configured.
+The live domain is **https://www.tigabizcentre.com/** and the Worker name is `tiga-biz-centre`. `wrangler.jsonc` sets `SITE_URL` to that HTTPS origin. Keep the apex and www domains connected to this Worker: HTTP, the apex domain and the Workers subdomain permanently redirect to HTTPS www, preserving paths and query parameters. Canonicals, Open Graph, structured data, robots.txt and sitemap.xml use the configured origin. Local preview remains available on its own origin when `SITE_URL` is unset.
 
 Clean routes such as `/about` and `/services` are configured. `.html`, `/index.html` and trailing-slash variants redirect. Missing pages return a real 404. This is a multi-page static site, not an SPA fallback.
 
@@ -58,7 +58,7 @@ All twelve service pages use a compact checklist grid and a content-sized prepar
 
 See `docs/validation.txt`, `docs/design-audit.txt`, `docs/visual-review/`, and `docs/seo-competitor-research.txt`.
 
-The build and eight automated test groups pass locally. Browser checks cover filters, FAQ expansion, mobile navigation, text-size controls and form validation. Screenshots cover all seven approved pages at 390, 768, 1024, 1440 and 2560 px; no horizontal overflow or missing images was detected. Exact pixel identity is not claimed.
+The build and nine automated test groups pass locally, including production canonical redirects and local-preview access. Earlier browser checks cover filters, FAQ expansion, mobile navigation, text-size controls and form validation. Screenshots cover all seven approved pages at 390, 768, 1024, 1440 and 2560 px; no horizontal overflow or missing images was detected. Exact pixel identity is not claimed.
 
 GitHub Actions passed dependency installation, build, all six test groups and the Wrangler deployment dry-run on Linux: [successful check](https://github.com/syafiqapextreasure/tiga-biz-centre/actions/runs/41582220545). The local Windows sandbox blocks esbuild child processes, so the Linux check supplies the deployment validation. No Cloudflare account deployment has been performed.
 
@@ -78,3 +78,7 @@ The three profile people, five experience figures and four group entities now ap
 At the owner’s request, all public legacy brand mentions, source labels, original-profile notices, old group-entity names and links have been removed. About, Services and Portfolio now use TIGA wording, including page titles and descriptions. The old email was removed from visible links and structured data pending a replacement address. This update supersedes the historical attribution approach documented in earlier audits. All 19 pages are checked for legacy-brand leakage; eight test groups and ten browser checks pass.
 
 Confirmed contact email (4 November 2026): `tigabizcentre@gmail.com`, used on Contact, Our Process and the business structured data.
+
+## Custom-domain SEO audit (9 November 2026)
+
+All 19 live pages were checked. The update consolidates public host/protocol variants, adds specific descriptions for all 12 services and sharpens three priority service titles. See [the SEO/AEO/GEO audit and keyword priorities](docs/live-seo-audit-2026-11-09.txt) and [the Search Console and GA4 setup guide](docs/google-setup-guide.txt). Google Analytics is not installed: the owner's Measurement ID and a compatible tag/CSP integration are still needed. No ranking, indexing-speed or AI-citation guarantee is made.
