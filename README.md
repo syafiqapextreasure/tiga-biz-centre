@@ -58,7 +58,7 @@ All twelve service pages use a compact checklist grid and a content-sized prepar
 
 See `docs/validation.txt`, `docs/design-audit.txt`, `docs/visual-review/`, and `docs/seo-competitor-research.txt`.
 
-The build and eleven automated test groups pass locally, including all 25 routes, language alternates, FAQ/schema parity, case studies, production canonical redirects and local-preview access. Earlier browser checks cover filters, FAQ expansion, mobile navigation, text-size controls and form validation. Screenshots cover all seven approved pages at 390, 768, 1024, 1440 and 2560 px; no horizontal overflow or missing images was detected. Exact pixel identity is not claimed.
+The build and twelve automated test groups pass locally, including GTM production-only loading, all 25 routes, language alternates, FAQ/schema parity, case studies, production canonical redirects and local-preview access. Earlier browser checks cover filters, FAQ expansion, mobile navigation, text-size controls and form validation. Screenshots cover all seven approved pages at 390, 768, 1024, 1440 and 2560 px; no horizontal overflow or missing images was detected. Exact pixel identity is not claimed.
 
 GitHub Actions passed dependency installation, build, all six test groups and the Wrangler deployment dry-run on Linux: [successful check](https://github.com/syafiqapextreasure/tiga-biz-centre/actions/runs/41582220545). The local Windows sandbox blocks esbuild child processes, so the Linux check supplies the deployment validation. No Cloudflare account deployment has been performed.
 
@@ -81,8 +81,14 @@ Confirmed contact email (4 November 2026): `tigabizcentre@gmail.com`, used on Co
 
 ## Custom-domain SEO audit (9 November 2026)
 
-All 19 live pages were checked. The update consolidates public host/protocol variants, adds specific descriptions for all 12 services and sharpens three priority service titles. See [the SEO/AEO/GEO audit and keyword priorities](docs/live-seo-audit-2026-11-09.txt) and [the Search Console and GA4 setup guide](docs/google-setup-guide.txt). Google Analytics is not installed: the owner's Measurement ID and a compatible tag/CSP integration are still needed. No ranking, indexing-speed or AI-citation guarantee is made.
+All 19 original live pages were checked. The update consolidates public host/protocol variants, adds specific descriptions for all 12 services and sharpens three priority service titles. See [the SEO/AEO/GEO audit and keyword priorities](docs/live-seo-audit-2026-11-09.txt) and [the Search Console and GA4 setup guide](docs/google-setup-guide.txt). The later GTM installation below supersedes the initial audit's tracking-installation gap. No ranking, indexing-speed or AI-citation guarantee is made.
 
 ## Service answers, translations and case studies
 
 The subsequent content update expands all 12 service pages with practical answers and related-service links. Four priority services have Bahasa Malaysia editions with reciprocal language links, and two existing portfolio records have dedicated case studies. The sitemap now lists 25 pages. See [the content update and validation](docs/seo-content-update-2026-11-09.txt). Maintain English guidance in `src/service-guides.mjs`, translations in `src/locales.mjs` and case-study presentation in `src/case-studies.mjs`; project facts remain in `src/profile.mjs`.
+
+## Google Tag Manager
+
+Container `GTM-M3KKB945` loads on production HTML through `public/tag-manager.js`, injected by the Worker near the start of the head. The noscript iframe follows the opening body tag. Local development does not load tracking. The loader queues the standard GTM start event before loading the container, with no duplicate direct GA installation. The published container returned HTTP 200 and contained GA4 ID `G-Y48STDP5G1` during setup; confirm event receipt in that property's Realtime report.
+
+The CSP allows Google Tag Manager and basic Analytics resources, without enabling inline JavaScript or unsafe-eval. Manage tags in GTM; additional advertising or custom HTML tags may need a separate review of their resource requirements. Before enabling automatic outbound/form tracking, ensure it cannot send WhatsApp message query strings or user-entered contact data. The website does not add form values to the data layer. GTM container changes are managed separately from this repository.
