@@ -133,3 +133,18 @@
   .hero .hero-art .animated-hero { display: block; width: 100%; height: auto; max-height: none; }
   .hero .hero-description br { display: none; }
 }
+.website-example { border:1px solid #d7dcd1; background:#fbfaf6; }
+.concept-preview { container-type:inline-size; padding:6% 3% 4%; background:linear-gradient(145deg,#ecece4,#e2e9df); }
+.concept-catering { background:linear-gradient(145deg,#f7eede,#e9dcc8); }
+.concept-professional { background:linear-gradient(145deg,#e9eeec,#d9e2dd); }
+.concept-screen { margin:0 4%; overflow:hidden; border:1.2cqw solid #23332e; border-radius:2.1cqw 2.1cqw .6cqw .6cqw; }
+.concept-masthead { display:flex; align-items:center; justify-content:space-between; padding:2% 5%; color:#20312c; background:#fffdf6; font:600 3.1cqw/1.2 Georgia,serif; }
+.concept-photo { position:relative; overflow:hidden; }
+.concept-photo img { width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; transition:transform .5s ease; }
+.concept-photo::after { content:''; position:absolute; inset:0; background:linear-gradient(90deg,#102019b8,transparent 85%); }
+.concept-photo strong { position:absolute; z-index:1; top:50%; transform:translateY(-50%); left:5%; width:58%; color:white; font:600 6.5cqw/1.04 Jakarta,sans-serif; letter-spacing:-.045em; }
+.concept-catering .concept-photo strong { font-family:Georgia,serif; font-style:italic; }
+.concept-professional .concept-photo strong { font-family:Georgia,serif; }
+.concept-base { height:1.7cqw; border-radius:.4cqw .4cqw 3cqw 3cqw; background:linear-gradient(#b2b8b3,#73827b); }
+.website-example h3 { background:#f6f8f2; padding:1em; }
+@media (hover:hover) and (prefers-reduced-motion:no-preference) { .website-example:hover .concept-photo img { transform:scale(1.035); } }
