@@ -54,18 +54,18 @@ export function heroScene(key, illustration) {
   const satellites = icons.map(([x,y,path], index) => `
     <g transform="translate(${x} ${y})"><g>
       <animateTransform attributeName="transform" type="${motion}" values="${poses}" dur="4.8s" begin="-${index * 1.6}s" repeatCount="indefinite"/>
-      <circle r="20" fill="#eff1e7" stroke="#b59452" stroke-width="1.3"/>
+      <circle r="22" fill="#eff1e7" stroke="#b59452" stroke-width="1.3"/>
       <circle r="18" fill="none" stroke="#b59452" stroke-width="1">
         <animate attributeName="r" values="18;26;26" dur="4.8s" begin="-${index * 1.6}s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values=".8;0;0" dur="4.8s" begin="-${index * 1.6}s" repeatCount="indefinite"/>
       </circle>
-      <path transform="translate(-12 -12)" d="${path}" stroke-width="1.8"/>
+      <path transform="scale(1.36) translate(-12 -12)" d="${path}" stroke-width="1.8"/>
     </g></g>`).join('');
   return `<svg class="asset animated-hero" viewBox="0 0 240 160" aria-hidden="true" fill="none" stroke="#005344" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
     <ellipse cx="120" cy="83" rx="79" ry="57" fill="#e8ecdf" stroke="none"/>
     <path d="${route}" stroke="#aa8a48" stroke-width="1.4" stroke-dasharray="2 4"/>
     <circle r="3" fill="#ae873d" stroke="none"><animateMotion path="${route}" dur="4.8s" repeatCount="indefinite"/></circle>
-    <g transform="translate(40 30) scale(.87)">${illustration}</g>${satellites}
+    <g transform="translate(24 19) scale(1.08)">${illustration}</g>${satellites}
   </svg>`;
 }
 

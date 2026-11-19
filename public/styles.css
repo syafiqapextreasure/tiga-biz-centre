@@ -117,3 +117,12 @@
 @keyframes project-preview { 0%,80%,100% { transform: translateY(0); } 35%,50% { transform: translateY(-15px) rotate(-2deg); } }
 @keyframes write-answer { 0%,100% { stroke-dashoffset: 55; } 50%,80% { stroke-dashoffset: 0; } }
 @keyframes incoming-message { 0%,75%,100% { transform: translate(0,0); } 35% { transform: translate(6px,-6px); } }
+/* Give illustrated heroes more room, including on narrow phones. */
+@media (min-width:901px) {
+  body .main .hero { grid-template-columns:minmax(0,1fr) minmax(0,39%); }
+  .hero-art .animated-hero { max-height:32vw; }
+  .detail-art .asset { max-height:25vw; }
+}
+@media (max-width:900px) {
+  body .main .hero { grid-template-columns:minmax(0,1fr) minmax(0,34%); gap:3%; }
+}
