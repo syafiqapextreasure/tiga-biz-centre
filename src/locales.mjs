@@ -53,4 +53,4 @@ export const malayContent={
  ['Perlukah saya menghantar kata laluan atau fail sulit bersama pertanyaan?','Tidak. Mulakan dengan penerangan tugasan. Laman web ini tidak menyediakan kemudahan muat naik dokumen. Tanya cara berkongsi rekod yang diperlukan dengan sesuai dan jangan sertakan kata laluan akaun dalam pertanyaan.']
  ]}
 };
-export const malayNav=[['/','Utama (EN)'],[malayContent['foreign-worker-documentation'].route,'Pekerja asing'],[malayContent['business-registration-startup'].route,'Mula perniagaan'],[malayContent['business-proposal-company-profile'].route,'Profil syarikat'],[malayContent['general-business-admin'].route,'Pentadbiran'],['/portfolio','Portfolio (EN)'],['/contact','Hubungi kami (EN)']];
+export const malayNav=[['/','Utama (EN)'],['/free-website','Laman web percuma (EN)'],[malayContent['foreign-worker-documentation'].route,'Pekerja asing'],[malayContent['business-registration-startup'].route,'Mula perniagaan'],[malayContent['business-proposal-company-profile'].route,'Profil syarikat'],[malayContent['general-business-admin'].route,'Pentadbiran'],['/portfolio','Portfolio (EN)'],['/contact','Hubungi kami (EN)']];

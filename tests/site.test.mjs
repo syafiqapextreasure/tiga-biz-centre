@@ -31,8 +31,8 @@ test('GTM loads on production HTML only and preserves CSP restrictions',async()=
   if(scripts.length){assert.equal(window.dataLayer[0].existing,true);assert.equal(window.dataLayer[1].event,'gtm.js');assert.equal(scripts[0].src,'https://www.googletagmanager.com/gtm.js?id=GTM-M3KKB945');assert.equal(scripts[0].async,true);}
  }
 });
-test('all 25 rendered routes have unique metadata, valid structured data and working internal targets',async()=>{
- assert.equal(routes.length,25);const titles=new Set();
+test('all 26 rendered routes have unique metadata, valid structured data and working internal targets',async()=>{
+ assert.equal(routes.length,26);const titles=new Set();
  for(const route of routes){const html=await readRoute(route);const title=html.match(/<title>(.*?)<\/title>/)[1];assert(!titles.has(title));titles.add(title);
   assert.equal((html.match(/<h1[ >]/g)||[]).length,1,route);
   assert(html.includes(`href="__SITE_ORIGIN__${route}"`),route);
@@ -104,7 +104,7 @@ test('Worker replaces origin in HTML, sitemap and robots, preserves status and h
  const post=await worker.fetch(new Request('https://example.test/contact',{method:'POST'}),{});assert.equal(post.status,405);
 });
 test('sitemap covers exactly the rendered pages and missing page is noindex',async()=>{
- const xml=await readFile('dist/sitemap.xml','utf8');assert.equal((xml.match(/<loc>/g)||[]).length,25);for(const r of routes)assert(xml.includes('__SITE_ORIGIN__'+r+'</loc>'));
+ const xml=await readFile('dist/sitemap.xml','utf8');assert.equal((xml.match(/<loc>/g)||[]).length,26);for(const r of routes)assert(xml.includes('__SITE_ORIGIN__'+r+'</loc>'));
  assert((await readFile('dist/404.html','utf8')).includes('noindex,follow'));
 });
 
@@ -148,4 +148,14 @@ test('WhatsApp enquiry keeps special characters and targets the confirmed number
 test('telephone pattern compiles in modern browsers and rejects invalid input',async()=>{
  const html=await readRoute('/contact');const pattern=html.match(/pattern="([^"]+)"/)[1];const re=new RegExp('^(?:'+pattern+')$','v');
  assert(re.test('+60 (11) 6128-3216'));assert(!re.test('hello'));assert(!re.test('123'));assert(html.includes('data-phone="601161283216"'));
+});
+
+test('free website offer is clear and linked without replacing the homepage',async()=>{
+ const html=await readRoute('/free-website'),home=await readRoute('/'),contact=await readRoute('/contact');
+ assert(home.includes('Less paperwork.'));assert(home.includes('href="/free-website"'));
+ assert(html.includes('Paid Hosting &amp; Care required.'));assert(html.includes('RM150'));assert(html.includes('website-hero.webp'));
+ assert(html.includes('/contact?service=Free%20Website%20%2B%20Hosting%20%26%20Care'));
+ assert(contact.includes('Free Website + Hosting &amp; Care'));
+ const graph=JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1])['@graph'];
+ assert(graph.some(i=>i['@type']==='Service'));assert.equal(graph.find(i=>i['@type']==='FAQPage').mainEntity.length,5);
 });

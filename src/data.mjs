@@ -38,4 +38,4 @@ export const faqs=[
  ['How do I arrange a consultation?','Contact us through WhatsApp, phone or email. We currently operate fully online. Explain your request and preferred availability so we can agree on the next step.','Contact']
 ].map((f,i)=>({question:f[0],answer:f[1],category:f[2],id:`faq-${i+1}`}));
 export {projects} from './profile.mjs';
-export const nav=[['/','Overview'],['/about','About'],['/services','Services'],['/our-process','Our process'],['/portfolio','Portfolio'],['/faqs','FAQs'],['/contact','Contact']];
+export const nav=[['/','Overview'],['/free-website','Free Website'],['/about','About'],['/services','Services'],['/our-process','Our process'],['/portfolio','Portfolio'],['/faqs','FAQs'],['/contact','Contact']];
