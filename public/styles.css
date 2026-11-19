@@ -101,3 +101,19 @@
  .website-hero-art{position:relative;z-index:0;width:165%;max-width:none;margin-left:-65%;align-self:center;top:-1.5vw;pointer-events:none;mask-image:linear-gradient(to right,transparent 0%,transparent 18%,#0002 33%,#000 56%);-webkit-mask-image:linear-gradient(to right,transparent 0%,transparent 18%,#0002 33%,#000 56%)}
  .website-hero-copy h1,.website-lead{text-shadow:0 1px 10px #faf8f1,0 0 4px #faf8f1}
 }
+.animated-hero .seal { transform-box: fill-box; transform-origin: center; animation: seal-stamp 4s ease-in-out infinite !important; }
+.animated-hero .welcome { animation: welcome-nod 4.5s ease-in-out infinite !important; }
+.animated-hero .flap { animation: case-open 4s ease-in-out infinite !important; }
+.animated-hero .stage { animation: step-light 3.6s ease-in-out infinite !important; }
+.animated-hero .second { animation-delay: 1.2s !important; }
+.animated-hero .third { animation-delay: 2.4s !important; }
+.animated-hero .project-sheet { animation: project-preview 5s ease-in-out infinite !important; }
+.animated-hero .answer { stroke-dasharray: 55; animation: write-answer 4s ease-in-out infinite !important; }
+.animated-hero .message { animation: incoming-message 4.2s ease-in-out infinite !important; }
+@keyframes seal-stamp { 0%,60%,100% { transform: scale(1); } 30% { transform: scale(1.12) rotate(-5deg); } }
+@keyframes welcome-nod { 0%,75%,100% { transform: translateY(0); } 35% { transform: translateY(-4px); } }
+@keyframes case-open { 0%,70%,100% { transform: translateY(0); } 35% { transform: translateY(-6px); } }
+@keyframes step-light { 0%,70%,100% { opacity: .18; } 20%,35% { opacity: 1; } }
+@keyframes project-preview { 0%,80%,100% { transform: translateY(0); } 35%,50% { transform: translateY(-15px) rotate(-2deg); } }
+@keyframes write-answer { 0%,100% { stroke-dashoffset: 55; } 50%,80% { stroke-dashoffset: 0; } }
+@keyframes incoming-message { 0%,75%,100% { transform: translate(0,0); } 35% { transform: translate(6px,-6px); } }
