@@ -25,17 +25,11 @@ const paths = {
   whatsapp: 'M3 21l1-5a9 9 0 1 1 4 4z M8 7l2 3-1 1q1 3 4 4l1-1 3 1q-1 4-5 2-5-2-6-7 0-2 2-3z'
 };
 const aliases = {'hero-services':'briefcase','hero-about':'people','hero-home':'pages','faq-chat':'chat','contact-chat':'chat','contact-review':'review','contact-check':'check'};
-const mark = '<path d="M45 38V15L75 4v30" fill="none" stroke="#dfb86e" stroke-width="4"/><path d="M44 33 15 44v33l33-8m30-36 27 11v33l-33-8" fill="none" stroke="#fff" stroke-width="4"/><path d="m60 35 13 23H47z" fill="#fff"/>';
 export function vectorAsset(name) {
-  const logo = name === 'logo';
-  if (logo || name === 'logo-mark') {
-    const label = logo ? '<g fill="white" text-anchor="middle" font-family="Arial,sans-serif"><text x="60" y="110" font-size="34" font-weight="bold" letter-spacing="1">TIGA</text><text x="60" y="130" font-size="17">Biz Centre</text></g>' : '';
-    return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="'+(logo?'10 0 100 134':'10 0 100 82')+'">'+mark+label+'</svg>';
-  }
   const key = aliases[name] || name.replace(/-(gold|light)$/,'');
   const color = name.endsWith('-light') ? '#fff' : name.endsWith('-gold') || ['briefcase','gear','document','clock','checklist','signpost','shield'].includes(name) ? '#ac8439' : '#005344';
   if (!paths[key]) throw new Error('Unknown icon '+name);
   return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path transform="translate(1 1)" d="'+paths[key]+'" fill="none" stroke="'+color+'" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 }
-export const vectorNames = [...new Set([...Object.keys(paths), ...Object.keys(aliases),'building-gold','chat-gold','chat-light','check-light','checklist-light','id-gold','people-gold','review-light','logo','logo-mark'])];
+export const vectorNames = [...new Set([...Object.keys(paths), ...Object.keys(aliases),'building-gold','chat-gold','chat-light','check-light','checklist-light','id-gold','people-gold','review-light'])];
 

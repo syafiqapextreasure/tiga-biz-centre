@@ -126,3 +126,10 @@
 @media (max-width:900px) {
   body .main .hero { grid-template-columns:minmax(0,1fr) minmax(0,34%); gap:3%; }
 }
+@media (max-width: 639px) {
+  body .main .hero { display: flex; flex-direction: column; align-items: stretch; gap: 12px; min-height: 0; }
+  .hero .hero-copy { width: 100%; }
+  .hero .hero-art { display: block; align-self: center; width: min(88%, 330px); margin: 0; }
+  .hero .hero-art .animated-hero { display: block; width: 100%; height: auto; max-height: none; }
+  .hero .hero-description br { display: none; }
+}

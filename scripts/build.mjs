@@ -13,9 +13,9 @@ for(const [pkg,file] of [['plus-jakarta-sans','plus-jakarta-sans-latin-wght-norm
  await copyFile(path.join(root,'node_modules/@fontsource-variable',pkg,'files',file),path.join(root,'public/assets',file));
  await copyFile(path.join(root,'node_modules/@fontsource-variable',pkg,'LICENSE'),path.join(root,'public/assets',pkg+'-LICENSE.txt'));
 }
-const favicon=await sharp(Buffer.from(vectorAsset('logo-mark')), {density:300}).resize(64,64,{fit:'contain',background:'#005344'}).png().toBuffer();
+const favicon=await sharp('public/assets/logo-mark.svg', {density:300}).resize(64,64,{fit:'contain',background:'#005344'}).png().toBuffer();
 await writeFile('public/assets/favicon.png',favicon);
-const logo=await sharp(Buffer.from(vectorAsset('logo')), {density:300}).resize({height:205}).png().toBuffer();
+const logo=await sharp('public/assets/logo.svg', {density:300}).resize({height:205}).png().toBuffer();
 const heroImage=await sharp('public/assets/hero-home.webp').resize({width:320}).toBuffer();
 const socialText=Buffer.from('<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg"><rect width="1200" height="630" fill="#faf8f1"/><rect width="230" height="630" fill="#005344"/><text x="285" y="150" font-family="Arial" font-size="25" fill="#005344" font-weight="700">TIGA BIZ CENTRE</text><text x="285" y="250" font-family="Arial" font-size="54" fill="#003f35" font-weight="700">Less paperwork.</text><text x="285" y="319" font-family="Arial" font-size="54" fill="#003f35" font-weight="700">More possibility.</text><text x="285" y="425" font-family="Arial" font-size="27" fill="#253a33">Online business &amp; documentation support</text><text x="285" y="478" font-family="Arial" font-size="23" fill="#253a33">Malaysia · Sabah · Sarawak</text></svg>');
 await sharp(socialText).composite([{input:logo,left:40,top:145},{input:heroImage,left:840,top:170}]).png().toFile('public/assets/social-card.png');
