@@ -94,3 +94,10 @@
 @media(min-width:901px){.website-hero{grid-template-columns:minmax(0,60fr) minmax(0,37fr);gap:3%;min-height:27vw}.website-process h2,.website-cta h2{font-size:clamp(25px,3vw,56px)}}
 @media(max-width:900px){.website-hero h1{font-size:36px}}
 @media(max-width:420px){.website-hero h1{font-size:32px}}
+/* Let the hero illustration extend behind the copy without changing the site shell. */
+@media(min-width:901px){
+ .website-hero{position:relative;isolation:isolate}
+ .website-hero-copy{position:relative;z-index:1}
+ .website-hero-art{position:relative;z-index:0;width:165%;max-width:none;margin-left:-65%;align-self:center;top:-1.5vw;pointer-events:none;mask-image:linear-gradient(to right,transparent 0%,transparent 18%,#0002 33%,#000 56%);-webkit-mask-image:linear-gradient(to right,transparent 0%,transparent 18%,#0002 33%,#000 56%)}
+ .website-hero-copy h1,.website-lead{text-shadow:0 1px 10px #faf8f1,0 0 4px #faf8f1}
+}
